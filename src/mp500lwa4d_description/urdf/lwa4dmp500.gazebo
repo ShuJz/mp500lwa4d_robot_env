@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- ros_control plugin -->
+  <!--gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/simple_robot</robotNamespace-->
+      <!--<jointName>arm_1_joint, arm_2_joint, arm_3_joint, arm_4_joint, arm_5_joint, arm_6_joint, arm_7_joint, arm_8_joint, wheel_right_joint, wheel_left_joint</jointName>
+      <robotParam>/robot_description</robotParam>-->
+      <!--robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo-->
+
+
+  <!-- Left Wheel -->
+  <gazebo reference="wheel_left_link">
+    <turnGravityOff>false</turnGravityOff>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
+    <fdir1 value="1 0 0"/>
+  </gazebo>
+
+  <!-- Base Link -->
+  <gazebo reference="base_link">
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="hanger">
+    <turnGravityOff>false</turnGravityOff>
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+ </gazebo>
+  <gazebo reference="castor_back">
+    <turnGravityOff>false</turnGravityOff>
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+ </gazebo>
+  <gazebo reference="castor_front">
+    <turnGravityOff>false</turnGravityOff>
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+ </gazebo>
+  <!-- Base Link -->
+<!--  <gazebo reference="base_link">
+    <surface>
+      <friction>
+        <ode>
+          <mu>0</mu>
+          <mu2>0</mu2>
+          <slip1>1.0</slip1>
+          <slip2>1.0</slip2>
+        </ode>
+      </friction>
+    </surface>
+  </gazebo>-->
+  <!-- Right Wheel -->
+  <gazebo reference="wheel_right_link">
+    <turnGravityOff>false</turnGravityOff>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
+    <fdir1 value="1 0 0"/>
+  </gazebo>
+
+    <gazebo reference="arm_base_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/Black"/>
+    </gazebo>
+
+    <!--gazebo reference="arm_1_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/LightGrey"/>
+    </gazebo>
+
+    <gazebo reference="arm_2_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/Black"/>
+    </gazebo>
+
+    <gazebo reference="arm_3_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/LightGrey"/>
+    </gazebo>
+
+    <gazebo reference="arm_4_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/Black"/>
+    </gazebo>
+
+    <gazebo reference="arm_5_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/LightGrey"/>
+    </gazebo>
+
+    <gazebo reference="arm_6_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/Black"/>
+    </gazebo>
+
+    <gazebo reference="arm_7_link">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <material value="Schunk/LightGrey"/>
+    </gazebo-->
+
+<!--  <gazebo>
+    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
+      <frameName>map</frameName>
+      <bodyName>base_link</bodyName>
+      <topicName>simple_robot/odom</topicName>
+      <updateRate>30.0</updateRate>
+    </plugin>
+  </gazebo>-->
+
+ <!--gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+
+      <robotNamespace>/mp500lwa4d</robotNamespace>
+    		  
+      <alwaysOn>true</alwaysOn>
+      <updateRate>100</updateRate>
+      <leftJoint>wheel_left_joint</leftJoint>
+      <rightJoint>wheel_right_joint</rightJoint>
+      <wheelSeparation>0.51</wheelSeparation>
+      <wheelDiameter>0.125</wheelDiameter>
+      <torque>45</torque>
+      <commandTopic>/mp500lwa4d/mobile_base_controller/cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>map</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      
+      <legacyMode>false</legacyMode>
+      
+      <rosDebugLevel>Debug</rosDebugLevel>
+      <publishWheelTF>true</publishWheelTF>
+      <publishWheelJointState>true</publishWheelJointState>
+      <wheelAcceleration>0.01</wheelAcceleration>
+      <wheelTorque>50</wheelTorque>
+      <publishTf>1</publishTf>
+      <odometrySource>encoder</odometrySource>
+    </plugin-->
+
+    <!--plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+    <jointName>wheel_left_joint, wheel_right_joint</jointName>
+    </plugin>>-->
+  <!--/gazebo-->
+
+</robot>

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/example-space-types.dir/space_types.cxx.o  -o example-space-types -rdynamic -lrt 

@@ -1,0 +1,35 @@
+# CMake generated Testfile for 
+# Source directory: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/opengm-src/src/unittest
+# Build directory: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(test-partitions "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-partitions")
+add_test(test-gm-learning-functions "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-gm-learning-functions")
+add_test(test-graphicalmodelmanipulator "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-graphicalmodelmanipulator")
+add_test(test-explicit-storage "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-explicit-storage")
+add_test(test-types "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-types")
+add_test(test-test-type-sizes-for-hdf5 "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-test-type-sizes-for-hdf5")
+add_test(test-fast-sequence "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-fast-sequence")
+add_test(test-functions "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-functions")
+add_test(test-factor "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-factor")
+add_test(test-discretespaces "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-discretespaces")
+add_test(test-graphicalmodel "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-graphicalmodel")
+add_test(test-factorgraph "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-factorgraph")
+add_test(test-graphicalmodeldecomposer "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-graphicalmodeldecomposer")
+add_test(test-operate "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-operate")
+add_test(test-operations "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-operations")
+add_test(test-accumulate "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-accumulate")
+add_test(test-randomaccessset "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-randomaccessset")
+add_test(test-tribool "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-tribool")
+add_test(test-accessor-iterator "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-accessor-iterator")
+add_test(test-random "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-random")
+add_test(test-primal-lpbound "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-primal-lpbound")
+add_test(test-transportsolver "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-transportsolver")
+add_test(test-lp-solver "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-lp-solver")
+add_test(test-indicator-variable "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-indicator-variable")
+add_test(test-linear-constraint "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-linear-constraint")
+add_test(test-subsequence-iterator "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-subsequence-iterator")
+add_test(test-lp-functiontransfer "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-lp-functiontransfer")
+add_test(test-canonicalview "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-canonicalview")
+subdirs(inference)

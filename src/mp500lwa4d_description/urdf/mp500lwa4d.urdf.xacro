@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="mp500lwa4d" >
+  <!--neo_mp_500-->
+  <xacro:include filename="$(find neo_mp_500)/robot_model/mp_500/mp500.urdf.xacro" />
+  <!-- common stuff -->
+  <xacro:include filename="$(find schunk_description)/urdf/common.xacro" />
+  <xacro:include filename="$(find schunk_description)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find mp500lwa4d_description)/urdf/sr.gazebo"/>
+  <!-- schunk lwa4d -->
+  <xacro:include filename="$(find schunk_description)/urdf/lwa4d/lwa4d.urdf.xacro" />
+
+  <!-- Used for fixing robot to Gazebo >
+  <link name="world"/>
+
+  <joint name="world_base_joint" type="planar">
+    	<parent link="world" />
+    	<child link="base_link" />
+  </joint-->
+
+  <!-- arm -->
+  <xacro:schunk_lwa4d name="arm" parent="base_link" has_podest="true">
+    <origin xyz="0.19 0 0.36" rpy="0 0 0" /> <!--slightly above gazebo plane-->
+  </xacro:schunk_lwa4d>
+<transmission name="arm_1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm_1_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm_1_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!--transmission name="wheel_right_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_right_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_right_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission-->
+
+<transmission name="arm_2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm_2_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm_2_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<transmission name="arm_3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm_3_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm_3_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<transmission name="arm_4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm_4_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm_4_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<transmission name="arm_5_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm_5_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm_5_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<transmission name="arm_6_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm_6_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm_6_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<transmission name="arm_7_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="arm_7_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="arm_7_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>0.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <gazebo>
+      <!--plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so"-->
+       <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+        <!--plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so"-->
+        <robotNamespace>mp500lwa4d</robotNamespace>
+        <!--filterJointsParam>joint_names</filterJointsParam-->
+      </plugin>
+    </gazebo>
+
+
+</robot>

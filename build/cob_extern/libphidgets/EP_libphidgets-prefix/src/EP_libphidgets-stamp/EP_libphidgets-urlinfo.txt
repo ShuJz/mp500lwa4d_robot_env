@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://www.phidgets.com/downloads/phidget21/libraries/linux/libphidget/libphidget_2.1.8.20151217.tar.gz'
+tag='MD5=818ab2ff1de92ed9568a206e0e89657f'

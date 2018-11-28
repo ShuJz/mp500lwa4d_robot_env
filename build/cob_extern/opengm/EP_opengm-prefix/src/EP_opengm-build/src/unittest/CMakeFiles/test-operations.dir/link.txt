@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-operations.dir/test_operations.cxx.o  -o test-operations -rdynamic 

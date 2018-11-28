@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/example-grid-potts.dir/grid_potts.cxx.o  -o example-grid-potts -rdynamic -lrt 

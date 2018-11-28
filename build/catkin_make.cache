@@ -1,0 +1,2 @@
+code:diff_drive_controller:mp500lwa4d_description:mp500lwa4d_moveit_config:neo_mp_500:schunk_description
+-DCATKIN_DEVEL_PREFIX=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel -DCMAKE_INSTALL_PREFIX=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install -G Unix Makefiles

@@ -1,0 +1,4 @@
+random_input.py -- this is a python file, which can be for test used. in this file all inputs are defined as random float.
+globalvalue.py -- this is a python file, which invokes variante between different files.
+MG_jointcontrol.py -- this is a python file, which is basically consistent with move_group_python_interface_tutorial.py,except some alterations of inputs of jointstate.
+sent_velocity_client.py -- this is a python file, which defines talker function and read_model_state function.

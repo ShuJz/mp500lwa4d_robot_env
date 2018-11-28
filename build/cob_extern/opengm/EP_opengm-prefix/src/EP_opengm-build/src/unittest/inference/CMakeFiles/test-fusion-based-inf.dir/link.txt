@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-fusion-based-inf.dir/test_fusion_based_inf.cxx.o  -o test-fusion-based-inf -rdynamic 

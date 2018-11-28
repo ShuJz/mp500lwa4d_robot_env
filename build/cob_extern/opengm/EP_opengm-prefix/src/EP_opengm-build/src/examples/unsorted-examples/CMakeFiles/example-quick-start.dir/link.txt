@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/example-quick-start.dir/quick_start.cxx.o  -o example-quick-start -rdynamic -lrt 

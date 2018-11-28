@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/ipa320/thirdparty/raw/master/concorde-tsp-solver-20031219.tar.gz'
+tag='MD5=fba5435ca1fd01f9da081fe5232a7203'

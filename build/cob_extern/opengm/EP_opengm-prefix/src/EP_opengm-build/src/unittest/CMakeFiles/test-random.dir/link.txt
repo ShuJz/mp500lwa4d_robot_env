@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-random.dir/test_random_1.cxx.o  -o test-random -rdynamic 

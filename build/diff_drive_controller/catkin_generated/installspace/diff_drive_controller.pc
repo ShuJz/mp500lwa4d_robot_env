@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install
+
+Name: diff_drive_controller
+Description: Description of diff_drive_controller
+Version: 0.14.2
+Cflags: -I/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/include
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/lib -ldiff_drive_controller
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install
+
+Name: neo_mp_500
+Description: Description of neo_mp_500
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/lib 
+Requires: 

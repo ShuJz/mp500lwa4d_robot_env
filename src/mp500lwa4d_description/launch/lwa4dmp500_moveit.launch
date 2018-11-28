@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="paused" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  <arg name="model" default="$(find mp500lwa4d_description)/urdf/lwa4dmp500.urdf.xacro"/>
+  <arg name="rvizconfig" default="$(find mp500lwa4d_description)/rviz/mp500lwa4d.rviz"/>
+
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/>
+  <!-- send robot urdf to param server -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+  </node>
+
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" >
+      <param name="use_gui" value="true" />
+      <param name="rate" value="50" />
+  </node>
+  <remap from="/joint_states" to="/mp500lwa4d/joint_states" />
+  
+  <!-- joint_state_controller -->
+  <!--rosparam file="$(find mp500lwa4d_description)/controller/joint_state_controller.yaml" command="load"/-->
+  <!--rosparam file="$(find schunk_lwa4d)/config/arm_controller.yaml" command="load"/-->
+  <!--rosparam file="$(find mp500lwa4d_description)/controller/arm_controller.yaml" command="load"/-->
+  <!--rosparam file="$(find simple_robot_description)/controller/wheel_controller.yaml" command="load"/-->
+ 
+
+  <!--node name="controller_spawner" pkg="controller_manager" type="spawner" ns="mp500lwa4d" args="/mp500lwa4d/joint_state_controller /mp500lwa4d/mobile_base_controller" respawn="true" output="screen">
+     <param name="rate" value="50" />
+  </node-->
+
+  <!--node name="simple_navigation_goals" pkg="simple_navigation_goals" type="move_group_interface_demo" respawn="false" output="screen">
+  </node-->
+
+  <include file="$(find mp500lwa4d_moveit_config)/launch/move_group.launch">
+    <arg name="publish_monitored_planning_scene" value="true" />
+  </include>
+
+  <!--include file="$(find mp500lwa4d_moveit_config)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>
+    <arg name="fake_execution" value="true"/>
+    <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include-->
+  <node name="move_group_interface_demo" pkg="move_group_interface" type="move_group_interface_demo" respawn="false" output="screen">
+  </node>
+
+</launch>

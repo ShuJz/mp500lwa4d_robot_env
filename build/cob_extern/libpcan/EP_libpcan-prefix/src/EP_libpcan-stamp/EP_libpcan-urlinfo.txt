@@ -1,0 +1,3 @@
+repository='external project URL'
+module='http://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.3.tar.gz'
+tag='MD5=d8d58223c1b1c03b891aa43763fec2cb'

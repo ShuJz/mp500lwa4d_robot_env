@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-self-fusion.dir/test_self_fusion.cxx.o  -o test-self-fusion -rdynamic 

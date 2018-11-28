@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-astar.dir/test_astar.cxx.o  -o test-astar -rdynamic -lrt 

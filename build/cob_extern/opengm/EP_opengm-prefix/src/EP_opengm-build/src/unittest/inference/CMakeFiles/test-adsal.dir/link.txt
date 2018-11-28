@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-adsal.dir/test_adsal.cxx.o  -o test-adsal -rdynamic 

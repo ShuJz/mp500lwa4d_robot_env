@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel
+
+Name: libntcan
+Description: Description of libntcan
+Version: 0.6.12
+Cflags: -I/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/cob_extern/libntcan/common/include
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib -lntcan
+Requires: 

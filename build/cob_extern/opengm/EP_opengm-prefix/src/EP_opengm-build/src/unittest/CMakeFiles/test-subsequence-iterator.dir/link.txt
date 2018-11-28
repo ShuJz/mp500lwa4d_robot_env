@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-subsequence-iterator.dir/test_subsequence_iterator.cxx.o  -o test-subsequence-iterator -rdynamic 

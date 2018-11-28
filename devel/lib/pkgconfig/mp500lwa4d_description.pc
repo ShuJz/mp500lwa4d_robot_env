@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel
+
+Name: mp500lwa4d_description
+Description: Description of mp500lwa4d_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib 
+Requires: 

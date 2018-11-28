@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-tribool.dir/test_tribool.cxx.o  -o test-tribool -rdynamic 

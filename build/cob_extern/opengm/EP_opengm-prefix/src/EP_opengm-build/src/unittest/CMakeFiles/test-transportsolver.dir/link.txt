@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-transportsolver.dir/test_transportsolver.cpp.o  -o test-transportsolver -rdynamic 

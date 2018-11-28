@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-nesterov.dir/test_nesterov.cxx.o  -o test-nesterov -rdynamic 

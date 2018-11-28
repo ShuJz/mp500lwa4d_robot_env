@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/CMakeFiles/EP_libphidgets"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/CMakeFiles/EP_libphidgets.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/CMakeFiles/EP_libphidgets-complete.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/EP_libphidgets-prefix/src/EP_libphidgets-stamp/EP_libphidgets-install.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/EP_libphidgets-prefix/src/EP_libphidgets-stamp/EP_libphidgets-mkdir.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/EP_libphidgets-prefix/src/EP_libphidgets-stamp/EP_libphidgets-download.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/EP_libphidgets-prefix/src/EP_libphidgets-stamp/EP_libphidgets-update.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/EP_libphidgets-prefix/src/EP_libphidgets-stamp/EP_libphidgets-patch.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/EP_libphidgets-prefix/src/EP_libphidgets-stamp/EP_libphidgets-configure.rule"
+		},
+		{
+			"file" : "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/cob_extern/libphidgets/EP_libphidgets-prefix/src/EP_libphidgets-stamp/EP_libphidgets-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"EP_libphidgets"
+		],
+		"name" : "EP_libphidgets"
+	}
+}

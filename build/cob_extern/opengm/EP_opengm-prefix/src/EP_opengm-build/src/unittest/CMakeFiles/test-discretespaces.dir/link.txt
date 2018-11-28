@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-discretespaces.dir/test_discretespaces.cxx.o  -o test-discretespaces -rdynamic 

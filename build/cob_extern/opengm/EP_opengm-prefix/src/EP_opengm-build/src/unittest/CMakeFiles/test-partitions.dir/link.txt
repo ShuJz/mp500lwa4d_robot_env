@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-partitions.dir/test_partitions.cxx.o  -o test-partitions -rdynamic 

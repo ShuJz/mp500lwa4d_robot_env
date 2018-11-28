@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-accumulate.dir/test_accumulate.cxx.o  -o test-accumulate -rdynamic 
