@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="laser" >
+    <xacro:macro name="laser" params="parent:=base_link">	 
+   		<joint name="laserscanner_front_joint" type="fixed">
+    		<axis xyz="0 0 1" />
+    		<origin xyz="-0.39 0 0.281" rpy="0 0 0" />
+    		<parent link="${parent}"/>
+    		<child link="laserscanner_front_link"/>
+   		</joint>
+
+   		<link name="laserscanner_front_link" type="laser">
+			<inertial>
+				<mass value="0.01" />
+				<origin xyz="0 0 0" rpy="3.14 0 -1.57" />
+				<inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001" />
+        	</inertial>
+
+ 			<visual>
+				<origin xyz="0 0 -0.04" rpy="3.14 0 -1.57" />
+				<geometry>
+                	<!--cylinder length="0.154" radius="0.053" /-->		  		
+            		<mesh filename="package://neo_mp_500/robot_model/mp_500/meshes/SICK-S300.STL" />
+				</geometry>
+				<material name="Neobotix/Yellow" />
+  			</visual>
+
+  			<collision>
+				<origin xyz="0 0 0" rpy="3.14 0 -1.57" />
+				<geometry>
+	  			<cylinder length="0.154" radius="0.053" />
+				</geometry>
+  			</collision>
+   		</link>
+
+   </xacro:macro>
+</robot>

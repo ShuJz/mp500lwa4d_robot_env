@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <gazebo>
+        <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+        <robotNamespace>/mp500lwa4d</robotNamespace>		  
+        <alwaysOn>true</alwaysOn>
+        <updateRate>100</updateRate>
+        <leftJoint>wheel_left_joint</leftJoint>
+        <rightJoint>wheel_right_joint</rightJoint>
+        <wheelSeparation>0.51</wheelSeparation>
+        <wheelDiameter>0.25</wheelDiameter>
+        <torque>45</torque>
+        <commandTopic>/mobile_base_controller/cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>map</odometryFrame>
+        <robotBaseFrame>/mp500lwa4d/base_link</robotBaseFrame>    
+        <legacyMode>false</legacyMode>
+        <rosDebugLevel>Debug</rosDebugLevel>
+        <publishWheelTF>true</publishWheelTF>
+        <publishWheelJointState>true</publishWheelJointState>
+        <wheelAcceleration>0.01</wheelAcceleration>
+        <wheelTorque>50</wheelTorque>
+        <publishTf>1</publishTf>
+        <odometrySource>encoder</odometrySource>
+        </plugin>
+
+        <!--plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so"-->
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>mp500lwa4d</robotNamespace>
+            <filterJointsParam>joint_names</filterJointsParam>
+        </plugin>
+    </gazebo>
+  </robot>

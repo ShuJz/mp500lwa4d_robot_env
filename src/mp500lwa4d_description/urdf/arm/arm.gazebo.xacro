@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <gazebo reference="arm_base_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/Black"/>
+    </gazebo>
+
+    <gazebo reference="arm_1_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/LightGrey"/>
+    </gazebo>
+
+    <gazebo reference="arm_2_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/Black"/>
+    </gazebo>
+
+    <gazebo reference="arm_3_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/LightGrey"/>
+    </gazebo>
+
+    <gazebo reference="arm_4_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/Black"/>
+    </gazebo>
+
+    <gazebo reference="arm_5_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/LightGrey"/>
+    </gazebo>
+
+    <gazebo reference="arm_6_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/Black"/>
+    </gazebo>
+
+    <gazebo reference="arm_7_link">
+        <gravity>true</gravity>
+        <self_collide>false</self_collide>
+        <material value="Schunk/LightGrey"/>
+    </gazebo>
+
+</robot>

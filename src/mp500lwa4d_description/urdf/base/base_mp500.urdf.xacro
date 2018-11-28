@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="base_mp500" >
+
+<!--++++++++++++++++++base_link+++++++++++++++++++++-->  
+	<link name="base_link">
+		<inertial>
+			<mass value="25.67" />
+			<origin xyz="0 0 0.216" rpy="0 0 0"/>
+			<inertia ixx="0.54" ixy="0.0" ixz="0.0" iyy="1.08" iyz="0.0" izz="1.23" />
+		</inertial>
+
+		<visual name='body'>
+		<!--origin xyz="0.0 0.0 0.234" rpy="0 0 1.57" /-->
+		<!-- for cylinder -->
+			<origin xyz="-0.160 0.0 0.09" rpy="0 0 -1.57" />
+			<!-- for STL -->
+			<geometry>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/MP500-BODY.STL" scale="0.01 0.01 0.01"/>
+			<!--cylinder length="0.381" radius="0.2545"/-->
+			<!--box size="0.445 0.277 0.17"/-->
+			</geometry>
+			<material name="Neobotix/Grey" />
+		</visual>
+		<collision name='body_collision'>
+			<origin xyz="0 0 0.216" rpy="0 0 -1.57" />
+			<geometry>
+				<box size="0.400 0.676 0.300"/>
+				<!--cylinder length="0.381" radius="0.2545"/-->
+			</geometry>
+		</collision>
+	</link>
+
+<!--+++++++++++++++wheel_left_link++++++++++++++++++--> 
+	<link name="wheel_left_link" type="wheel">
+		<inertial>
+			<mass value="1.0" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<inertia ixx="0.0045" ixy="0" ixz="0" iyy="0.0078" iyz="0" izz="0.0045" />
+		</inertial>
+
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 -1.57" />
+			<geometry>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/MP500-WHEEL.STL" scale="0.01 0.01 0.01" /> 
+			</geometry>
+			<material name="Neobotix/Black" />
+		</visual>
+
+		<collision>
+			<origin xyz="0 0 0" rpy="0 1.57 -1.57" />
+			<geometry>
+				<cylinder radius="0.125" length="0.085"/>
+		</geometry>
+		</collision>
+		
+	</link>
+
+<!--+++++++++++++++wheel_left_joint+++++++++++++++++--> 
+	<joint name="wheel_left_joint" type="continuous">
+		<origin xyz="-0.155 0.255 0.13" rpy="0 0 0" />
+		<axis xyz="0 1 0"/>
+		<limit effort="10000.0" velocity="1.5"/>
+		<joint_properties damping="0.0" friction="0.0" />
+		<parent link="base_link" />
+		<child link="wheel_left_link" />
+	</joint>
+
+<!--+++++++++++++++wheel_right_link+++++++++++++++++--> 
+<!--Mesh Volume is 3587.704102
+Mesh Surface is 1876.550415
+Thin shell barycenter -25.340059 -0.000027 4.499997
+Center of Mass is -25.340000 -0.000164 4.500009
+Inertia Tensor is :
+| 322624.937500 -0.068522 -1.293689 |
+| -0.068522 179104.328125 -1.342927 |
+| -1.293689 -1.342927 179079.796875 |
+Principal axes are :
+| 1.000000 -0.000000 0.000009 |
+| -0.000000 0.998514 0.054499 |
+| -0.000009 -0.054499 0.998514 |
+axis momenta are :
+| 322624.937500 179104.406250 179079.718750 |
+Mesh Volume is 0.000000
+Mesh Surface is 0.000019
+Thin shell barycenter -0.002534 -0.000000 0.000450
+Center of Mass is -0.002534 -0.000000 0.000450
+Inertia Tensor is :
+| 0.000000 -0.000000 -0.000000 |
+| -0.000000 0.000000 -0.000000 |
+| -0.000000 -0.000000 0.000000 |
+Principal axes are :
+| 1.000000 -0.000000 0.000009 |
+| -0.000000 0.998526 0.054276 |
+| -0.000009 -0.054276 0.998526 |
+axis momenta are :
+| 0.000000 0.000000 0.000000 | -->
+	<link name="wheel_right_link" type="wheel">
+		<inertial>
+			<mass value="1" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<!--inertia ixx="0.0051" ixy="0" ixz="0" iyy="0.0051" iyz="0" izz="0.009" /-->
+			<inertia ixx="0.0045" ixy="0" ixz="0" iyy="0.0078" iyz="0" izz="0.0045" />
+		</inertial>
+
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 -1.57" />
+			<geometry>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/MP500-WHEEL.STL" scale="0.01 0.01 0.01" />
+			</geometry>
+			<material name="Neobotix/Black" />
+		</visual>
+
+		<collision>
+			<origin xyz="0 0 0" rpy="0 1.57 -1.57" />
+			<geometry>
+				<cylinder radius="0.125" length="0.085"/>
+			</geometry>
+		</collision>
+	</link>
+
+<!--++++++++++++wheel_right_joint++++++++++++++--> 
+	<joint name="wheel_right_joint" type="continuous">
+		<origin xyz="-0.155 -0.255 0.13" rpy="0 0 0" />
+		<axis xyz="0 1 0"/>
+		<limit effort="10000.0" velocity="1.5"/>
+		<joint_properties damping="0.0" friction="0.0" />
+		<parent link="base_link" />
+		<child link="wheel_right_link" />
+	</joint>
+
+<!--+++++++++++++++ wheel_hanger+++++++++++++++-->
+	<link name="hanger">
+		<inertial>
+			<mass value="0.01" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<inertia ixx="0.0013" ixy="0" ixz="0" iyy="0.0013" iyz="0" izz="0.0013" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 -1.57" />
+			<geometry>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/HANGER-WHEEL.STL" scale="0.01 0.01 0.01" />
+			</geometry>
+			<material name="Neobotix/Grey" />
+		</visual>
+
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 -1.57" />
+			<geometry>
+				<sphere radius="0.00115"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="hanger_joint" type="fixed">
+		<origin xyz="0.255 0 0.11" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<parent link="base_link" />
+		<child link="hanger" />
+	</joint>
+
+<!--+++++++++++++++ castor_front +++++++++++++++-->
+
+	<link name="castor_front">
+		<inertial>
+			<mass value="0.001" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<inertia ixx="0.000025" ixy="0" ixz="0" iyy="0.000025" iyz="0" izz="0.000025" />
+		</inertial>
+
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<geometry>
+				<sphere radius="0.005"/>    
+			</geometry>
+			<material name="Neobotix/Grey" />
+		</visual>
+
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<geometry>
+				<sphere radius="0.005"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="castor_front_joint" type="fixed">
+		<origin xyz="0.3 0 0.01" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<parent link="base_link" />
+		<child link="castor_front" />
+	</joint>
+
+
+</robot>
