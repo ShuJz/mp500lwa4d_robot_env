@@ -5,7 +5,7 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="model" default="$(find mp500lwa4d_description)/urdf/lwa4dmp500.urdf.xacro"/>
+  <arg name="model" default="$(find mp500lwa4d_description)/urdf/robot.urdf.xacro"/>
   <arg name="rvizconfig" default="$(find mp500lwa4d_description)/rviz/mp500lwa4d.rviz"/>
 
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->

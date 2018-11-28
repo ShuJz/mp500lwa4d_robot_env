@@ -9,7 +9,7 @@
             </joint>
             <actuator name="arm_${joint_num}_motor">
                 <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-                <mechanicalReduction>0.1</mechanicalReduction>
+                <mechanicalReduction>1</mechanicalReduction>
             </actuator>
         </transmission>
     </xacro:macro>

@@ -7,10 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build"
-export PYTHONPATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src:$ROS_PACKAGE_PATH"

@@ -117,8 +117,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/gtest/cmake_install.cmake")
-  include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/neo_mp_500/cmake_install.cmake")
-  include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/schunk_description/cmake_install.cmake")
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/mp500lwa4d_description/cmake_install.cmake")
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/mp500lwa4d_moveit_config/cmake_install.cmake")
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/code/cmake_install.cmake")

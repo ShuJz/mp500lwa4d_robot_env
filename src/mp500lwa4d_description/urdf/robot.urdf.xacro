@@ -30,5 +30,4 @@
     <!--+++++++++ ros controller +++++++++++-->
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/robot.gazebo.xacro" />
 
-
 </robot>

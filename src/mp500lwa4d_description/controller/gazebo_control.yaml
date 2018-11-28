@@ -57,17 +57,17 @@
           i_clamp: 0
           antiwindup: false
           publish_state: true
-        #wheel_left_joint:
-          #p: 0.75
-          #i: 0.00325
-          #d: 0.0075
-          #i_clamp: 0
-          #antiwindup: false
-          #publish_state: true
-        #wheel_right_joint:
-          #p: 0.75
-          #i: 0.00325
-          #d: 0.0075
-          #i_clamp: 0
-          #antiwindup: false
-          #publish_state: true
+        wheel_left_joint:
+          p: 0.75
+          i: 0.00325
+          d: 0.0075
+          i_clamp: 0
+          antiwindup: false
+          publish_state: true
+        wheel_right_joint:
+          p: 0.75
+          i: 0.00325
+          d: 0.0075
+          i_clamp: 0
+          antiwindup: false
+          publish_state: true

@@ -19,7 +19,7 @@
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_podest_link.stl"/>
                 </geometry>
-                <material name="Schunk/LightGrey"/>
+                <material name="LightGrey"/>
             </visual>
 
             <collision>
@@ -60,11 +60,16 @@
                 <origin xyz="0 0 0" />
                 <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
             </inertial>
+            <!--
+            <xacro:cylinder_inertial radius="0.06" length="0.150" mass="3.6">
+                <origin xyz="0 0 0.02" rpy="0 0 0"/>
+            </xacro:cylinder_inertial>
+            -->
             <visual>
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_1_link.stl"/>
                 </geometry>
-                <material name="Schunk/LightGrey"/>
+                <material name="LightGrey"/>
             </visual>
             <collision>
                 <geometry>
@@ -88,11 +93,16 @@
                 <origin xyz="0 0 0" />
                 <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
             </inertial>
+            <!--
+            <xacro:cylinder_inertial radius="0.06" length="0.150" mass="2.0">
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+            </xacro:cylinder_inertial>
+            -->
             <visual>
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_2_link.stl"/>
                 </geometry>
-                <material name="Schunk/Black"/>
+                <material name="Black"/>
             </visual>
             <collision>
                 <geometry>
@@ -116,11 +126,16 @@
                 <origin xyz="0 0 0" />
                 <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
             </inertial>
+            <!--
+            <xacro:cylinder_inertial radius="0.06" length="0.2" mass="2.0">
+                <origin xyz="0.0 0 -0.2" rpy="0 0 0"/>
+            </xacro:cylinder_inertial>
+            -->
             <visual>
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_3_link.stl"/>
                 </geometry>
-                <material name="Schunk/LightGrey"/>
+                <material name="LightGrey"/>
             </visual>
             <collision>
                 <geometry>
@@ -144,12 +159,17 @@
                 <origin xyz="0 0 0" />
                 <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
             </inertial>
+            <!--
+            <xacro:cylinder_inertial radius="0.06" length="0.150" mass="1.2">
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+            </xacro:cylinder_inertial>
+            -->
 
             <visual>
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_4_link.stl"/>
                 </geometry>
-            <material name="Schunk/Black"/>
+            <material name="Black"/>
             </visual>
             <collision>
                 <geometry>
@@ -173,12 +193,17 @@
                 <origin xyz="0 0 0" />
                 <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
             </inertial>
+            <!--
+            <xacro:cylinder_inertial radius="0.06" length="0.15" mass="1.2">
+                <origin xyz="0 0 -0.18" rpy="0 0 0"/>
+            </xacro:cylinder_inertial>
+            -->
 
             <visual>
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_5_link.stl"/>
                 </geometry>
-                <material name="Schunk/LightGrey"/>
+                <material name="LightGrey"/>
             </visual>
             <collision>
                 <geometry>
@@ -193,7 +218,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_5_link"/>
             <child link="arm_6_link"/>
-            <limit effort="15" velocity="1.2566" lower="${-2.09 + safety_offset}" upper="${2.09 - safety_offset}"/>
+            <limit effort="15" velocity="1.2566" lower="${-2.96 + safety_offset}" upper="${2.96 - safety_offset}"/>
         </joint>
     <!-- arm_6_link -->
         <link name="arm_6_link">
@@ -202,12 +227,17 @@
                 <origin xyz="0 0 0" />
                 <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
             </inertial>
+            <!--
+            <xacro:sphere_inertial radius="0.05" mass="1.9">
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+            </xacro:sphere_inertial>
+            -->
 
             <visual>
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_6_link.stl"/>
                 </geometry>
-                <material name="Schunk/Black"/>
+                <material name="Black"/>
             </visual>
             <collision>
                 <geometry>
@@ -232,15 +262,15 @@
                 <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
             </inertial>
             <!--
-                <xacro:cylinder_inertial radius="0.03" length="0.035" mass="0.05">
+            <xacro:cylinder_inertial radius="0.03" length="0.035" mass="0.05">
                 <origin xyz="0 0 0.06" rpy="0 0 0"/>
-                </xacro:cylinder_inertial>
+            </xacro:cylinder_inertial>
             -->
             <visual>
                 <geometry>
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_7_link.stl"/>
                 </geometry>
-                <material name="Schunk/LightGrey"/>
+                <material name="LightGrey"/>
             </visual>
             <collision>
                 <geometry>
@@ -251,7 +281,6 @@
 
         <joint name="arm_ee_joint" type="fixed">
             <origin xyz="0 0 0.0824" rpy="0 0 0"/>
-            <axis xyz="0 0 1"/>
             <parent link="arm_7_link"/>
             <child link="arm_ee_link"/>
         </joint>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <gazebo reference="laserscanner_front_link">
-        <material>Neobotix/Yellow</material>
+        <material value="Gazebo/Grey"/>
     </gazebo>
 
     <gazebo reference="laserscanner_front_link">

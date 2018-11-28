@@ -3,10 +3,10 @@
   <name>mp500lwa4d_moveit_config</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the mp500lwa4d with the MoveIt! Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the mp500lwa4d_robot with the MoveIt! Motion Planning Framework
   </description>
-  <author email="yangzhang1908@gmail.com">yangzhang</author>
-  <maintainer email="yangzhang1908@gmail.com">yangzhang</maintainer>
+  <author email="shujingzhe1996@gmail.com">Jingzhe Shu</author>
+  <maintainer email="shujingzhe1996@gmail.com">Jingzhe Shu</maintainer>
 
   <license>BSD</license>
 
@@ -21,6 +21,7 @@
   <run_depend>moveit_kinematics</run_depend>
   <run_depend>moveit_planners_ompl</run_depend>
   <run_depend>moveit_ros_visualization</run_depend>
+  <run_depend>moveit_setup_assistant</run_depend>
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>xacro</run_depend>

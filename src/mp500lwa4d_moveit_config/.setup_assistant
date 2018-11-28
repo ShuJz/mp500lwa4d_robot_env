@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mp500lwa4d_description
+    relative_path: urdf/robot.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/mp500lwa4d_robot.srdf
+  CONFIG:
+    author_name: Jingzhe Shu
+    author_email: shujingzhe1996@gmail.com
+    generated_timestamp: 1543434364

@@ -20,9 +20,9 @@
 				<origin xyz="0 0 -0.04" rpy="3.14 0 -1.57" />
 				<geometry>
                 	<!--cylinder length="0.154" radius="0.053" /-->		  		
-            		<mesh filename="package://neo_mp_500/robot_model/mp_500/meshes/SICK-S300.STL" />
+            		<mesh filename="package://mp500lwa4d_description/meshes/mp500/SICK-S300.STL" />
 				</geometry>
-				<material name="Neobotix/Yellow" />
+				<material name="Gazebo/Yellow" />
   			</visual>
 
   			<collision>

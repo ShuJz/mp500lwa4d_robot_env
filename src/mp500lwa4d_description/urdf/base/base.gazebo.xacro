@@ -14,6 +14,7 @@
           <kp>10000000.0</kp>
           <kd>1.0</kd>
           <fdir1 value="1 0 0"/>
+          <material value="Gazebo/Grey"/>
       </gazebo>
       <!-- Right Wheel -->
       <gazebo reference="wheel_right_link">
@@ -23,6 +24,7 @@
           <kp>10000000.0</kp>
           <kd>1.0</kd>
           <fdir1 value="1 0 0"/>
+          <material value="Gazebo/Grey"/>
       </gazebo>
       
       <!-- Castor -->
@@ -30,12 +32,14 @@
           <turnGravityOff>false</turnGravityOff>
           <mu1>0.0</mu1>
           <mu2>0.0</mu2>
+          <material value="Gazebo/Grey"/>
       </gazebo>
 
       <gazebo reference="castor_front">
           <turnGravityOff>false</turnGravityOff>
           <mu1>0.0</mu1>
           <mu2>0.0</mu2>
+          <material value="Gazebo/Grey"/>
       </gazebo>
 
 </robot>

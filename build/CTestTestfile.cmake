@@ -5,8 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
-subdirs(neo_mp_500)
-subdirs(schunk_description)
 subdirs(mp500lwa4d_description)
 subdirs(mp500lwa4d_moveit_config)
 subdirs(code)

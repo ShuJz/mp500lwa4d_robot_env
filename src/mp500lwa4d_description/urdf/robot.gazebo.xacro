@@ -5,11 +5,11 @@
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
         <robotNamespace>/mp500lwa4d</robotNamespace>		  
         <alwaysOn>true</alwaysOn>
-        <updateRate>100</updateRate>
+        <updateRate>50</updateRate>
         <leftJoint>wheel_left_joint</leftJoint>
         <rightJoint>wheel_right_joint</rightJoint>
         <wheelSeparation>0.51</wheelSeparation>
-        <wheelDiameter>0.25</wheelDiameter>
+        <wheelDiameter>0.26</wheelDiameter>
         <torque>45</torque>
         <commandTopic>/mobile_base_controller/cmd_vel</commandTopic>
         <odometryTopic>odom</odometryTopic>
@@ -27,7 +27,7 @@
 
         <!--plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so"-->
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>mp500lwa4d</robotNamespace>
+            <robotNamespace>/mp500lwa4d</robotNamespace>
             <filterJointsParam>joint_names</filterJointsParam>
         </plugin>
     </gazebo>

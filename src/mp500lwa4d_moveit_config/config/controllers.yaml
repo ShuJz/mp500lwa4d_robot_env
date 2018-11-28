@@ -11,5 +11,3 @@ controller_list:
         - arm_5_joint
         - arm_6_joint
         - arm_7_joint
-  
-   
