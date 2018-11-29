@@ -15,13 +15,13 @@
         <torque>45</torque>
         <commandTopic>/mobile_base_controller/cmd_vel</commandTopic>
         <odometryTopic>odom</odometryTopic>
-        <odometryFrame>map</odometryFrame>
-        <robotBaseFrame>/mp500lwa4d/base_link</robotBaseFrame>    
+        <odometryFrame>odom</odometryFrame>
+        <robotBaseFrame>base_link</robotBaseFrame>    
         <legacyMode>false</legacyMode>
         <rosDebugLevel>Debug</rosDebugLevel>
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
-        <wheelAcceleration>0.01</wheelAcceleration>
+        <wheelAcceleration>2.4</wheelAcceleration>
         <wheelTorque>50</wheelTorque>
         <publishTf>1</publishTf>
         <odometrySource>encoder</odometrySource>

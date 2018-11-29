@@ -3,25 +3,25 @@
         
       <!-- Base Link -->
       <gazebo reference="base_link">
-          <turnGravityOff>false</turnGravityOff>
+          <gravity>true</gravity>
       </gazebo>
 
       <!-- Left Wheel -->
       <gazebo reference="wheel_left_link">
-          <turnGravityOff>false</turnGravityOff>
-          <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
-          <kp>10000000.0</kp>
+          <gravity>true</gravity>
+          <mu1>1000.0</mu1>
+          <mu2>500.0</mu2>
+          <kp>1000000.0</kp>
           <kd>1.0</kd>
           <fdir1 value="1 0 0"/>
           <material value="Gazebo/Grey"/>
       </gazebo>
       <!-- Right Wheel -->
       <gazebo reference="wheel_right_link">
-          <turnGravityOff>false</turnGravityOff>
-          <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
-          <kp>10000000.0</kp>
+          <gravity>true</gravity>
+          <mu1>1000.0</mu1>
+          <mu2>500.0</mu2>
+          <kp>1000000.0</kp>
           <kd>1.0</kd>
           <fdir1 value="1 0 0"/>
           <material value="Gazebo/Grey"/>
@@ -29,14 +29,14 @@
       
       <!-- Castor -->
       <gazebo reference="hanger">
-          <turnGravityOff>false</turnGravityOff>
+          <gravity>true</gravity>
           <mu1>0.0</mu1>
           <mu2>0.0</mu2>
           <material value="Gazebo/Grey"/>
       </gazebo>
 
       <gazebo reference="castor_front">
-          <turnGravityOff>false</turnGravityOff>
+          <gravity>true</gravity>
           <mu1>0.0</mu1>
           <mu2>0.0</mu2>
           <material value="Gazebo/Grey"/>

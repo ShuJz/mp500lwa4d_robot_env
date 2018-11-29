@@ -31,7 +31,6 @@
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" >
       <param name="use_gui" value="true" />
       <param name="rate" value="50" />
-      <!--<remap from="/joint_states" to="/mp500lwa4d/joint_states" />-->
   </node>
   
   <!-- Fake Calibration -->

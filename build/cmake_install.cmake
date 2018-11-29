@@ -119,7 +119,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/gtest/cmake_install.cmake")
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/mp500lwa4d_description/cmake_install.cmake")
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/mp500lwa4d_moveit_config/cmake_install.cmake")
-  include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/code/cmake_install.cmake")
+  include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service/cmake_install.cmake")
   include("/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/diff_drive_controller/cmake_install.cmake")
 
 endif()

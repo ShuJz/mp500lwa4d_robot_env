@@ -67,7 +67,7 @@ set(robot_service_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(robot_service_SOURCE_PREFIX /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/code)
+  set(robot_service_SOURCE_PREFIX /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service)
   set(robot_service_DEVEL_PREFIX /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel)
   set(robot_service_INSTALL_PREFIX "")
   set(robot_service_PREFIX ${robot_service_DEVEL_PREFIX})
@@ -110,7 +110,7 @@ if(NOT "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include " STREQUA
         message(FATAL_ERROR "Project 'robot_service' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'robot_service' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/code/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'robot_service' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/${idir}'.  ${_report}")
     endif()
     _list_append_unique(robot_service_INCLUDE_DIRS ${include})
   endforeach()

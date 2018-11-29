@@ -7,5 +7,5 @@
 subdirs(gtest)
 subdirs(mp500lwa4d_description)
 subdirs(mp500lwa4d_moveit_config)
-subdirs(code)
+subdirs(robot_service)
 subdirs(diff_drive_controller)

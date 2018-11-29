@@ -522,10 +522,10 @@ random_numbers_DIR:PATH=/opt/ros/kinetic/share/random_numbers/cmake
 realtime_tools_DIR:PATH=/opt/ros/kinetic/share/realtime_tools/cmake
 
 //Value Computed by CMake
-robot_service_BINARY_DIR:STATIC=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/code
+robot_service_BINARY_DIR:STATIC=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service
 
 //Value Computed by CMake
-robot_service_SOURCE_DIR:STATIC=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/code
+robot_service_SOURCE_DIR:STATIC=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake

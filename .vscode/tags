@@ -8,7 +8,7 @@
 CATKIN_MARKER_FILE	../devel/_setup_util.py	/^CATKIN_MARKER_FILE = '.catkin'$/;"	kind:variable	line:46
 CMAKE_PREFIX_PATH	../devel/_setup_util.py	/^        CMAKE_PREFIX_PATH = '\/home\/jingzhe\/WorkSpace\/ROS\/mp500lwa4d_robot_env\/devel;\/home\/jingzhe\/WorkSpace\/ROS\/PR2\/devel;\/home\/jingzhe\/catkin_ws\/devel;\/home\/jingzhe\/WorkSpace\/ROS\/AlphaDemo\/devel;\/home\/jingzhe\/WorkSpace\/ROS\/Rostutorials_HuCX\/devel;\/opt\/ros\/kinetic'.split(';')$/;"	kind:variable	line:265
 CMAKE_PREFIX_PATH	../devel/_setup_util.py	/^        CMAKE_PREFIX_PATH = os.pathsep.join(CMAKE_PREFIX_PATH)$/;"	kind:variable	line:270
-DRL_env	../src/code/scripts/env_api.py	/^class DRL_env(object):$/;"	kind:class	line:20
+DRL_env	../src/robot_service/scripts/env_api.py	/^class DRL_env(object):$/;"	kind:class	line:20
 DiffDriveController.cfg	../src/diff_drive_controller/cfg/DiffDriveController.cfg	1;"	kind:file	line:1
 DiffDriveControllerConfig.py	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	1;"	kind:file	line:1
 DirectoryOfThisScript	../.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	kind:function	line:40
@@ -22,15 +22,17 @@ IS_DARWIN	../devel/_setup_util.py	/^IS_DARWIN = (system == 'Darwin')$/;"	kind:va
 IS_WINDOWS	../devel/_setup_util.py	/^IS_WINDOWS = (system == 'Windows')$/;"	kind:variable	line:50
 IsHeaderFile	../.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	kind:function	line:73
 LinkState	../devel/lib/python2.7/dist-packages/robot_service/msg/_LinkState.py	/^class LinkState(genpy.Message):$/;"	kind:class	line:10
-MG_jointcontrol.py	../src/code/scripts/MG_jointcontrol.py	1;"	kind:file	line:1
+MG_jointcontrol.py	../src/robot_service/scripts/MG_jointcontrol.py	1;"	kind:file	line:1
 MakeRelativePathsInFlagsAbsolute	../.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	kind:function	line:44
 ModelStates	../devel/lib/python2.7/dist-packages/robot_service/msg/_ModelStates.py	/^class ModelStates(genpy.Message):$/;"	kind:class	line:10
-MoveGroupPythonIntefaceTutorial	../src/code/scripts/MG_jointcontrol.py	/^class MoveGroupPythonIntefaceTutorial(object):$/;"	kind:class	line:80
+MoveGroupPythonIntefaceTutorial	../src/robot_service/scripts/MG_jointcontrol.py	/^class MoveGroupPythonIntefaceTutorial(object):$/;"	kind:class	line:80
+MoveItFkDemo	../src/robot_service/scripts/training_data/moveit_fk_controller.py	/^class MoveItFkDemo:$/;"	kind:class	line:8
+MoveItFkDemo	../src/robot_service/scripts/training_data/moveit_fk_demo.py	/^class MoveItFkDemo:$/;"	kind:class	line:8
 PACKAGE	../src/diff_drive_controller/cfg/DiffDriveController.cfg	/^PACKAGE = 'diff_drive_controller'$/;"	kind:variable	line:3
 Point	../devel/lib/python2.7/dist-packages/robot_service/msg/_Point.py	/^class Point(genpy.Message):$/;"	kind:class	line:9
 Pose	../devel/lib/python2.7/dist-packages/robot_service/msg/_Pose.py	/^class Pose(genpy.Message):$/;"	kind:class	line:10
 Quaternion	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quaternion.py	/^class Quaternion(genpy.Message):$/;"	kind:class	line:9
-ReadState	../src/code/scripts/sent_velocity_client.py	/^class ReadState:$/;"	kind:class	line:16
+ReadState	../src/robot_service/scripts/sent_velocity_client.py	/^class ReadState:$/;"	kind:class	line:16
 SOURCE_EXTENSIONS	../.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c' ]$/;"	kind:variable	line:38
 Twist	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^class Twist(genpy.Message):$/;"	kind:class	line:10
 _GetModelState.py	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	1;"	kind:file	line:1
@@ -48,8 +50,10 @@ __init__	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quaternion.py	/
 __init__	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^  def __init__(self, *args, **kwds):$/;"	kind:function	line:27
 __init__	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  def __init__(self, *args, **kwds):$/;"	kind:function	line:22
 __init__	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  def __init__(self, *args, **kwds):$/;"	kind:function	line:245
-__init__	../src/code/scripts/MG_jointcontrol.py	/^  def __init__(self):$/;"	kind:member	line:82
-__init__	../src/code/scripts/env_api.py	/^    def __init__(self,goal):$/;"	kind:member	line:22
+__init__	../src/robot_service/scripts/MG_jointcontrol.py	/^  def __init__(self):$/;"	kind:member	line:82
+__init__	../src/robot_service/scripts/env_api.py	/^    def __init__(self,goal):$/;"	kind:member	line:22
+__init__	../src/robot_service/scripts/training_data/moveit_fk_controller.py	/^    def __init__(self, joint_positions):$/;"	kind:member	line:9
+__init__	../src/robot_service/scripts/training_data/moveit_fk_demo.py	/^    def __init__(self):$/;"	kind:member	line:9
 __init__.py	../devel/lib/python2.7/dist-packages/diff_drive_controller/__init__.py	1;"	kind:file	line:1
 __init__.py	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/__init__.py	1;"	kind:file	line:1
 __init__.py	../devel/lib/python2.7/dist-packages/robot_service/__init__.py	1;"	kind:file	line:1
@@ -97,7 +101,7 @@ _has_header	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quaternion.p
 _has_header	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^  _has_header = False #flag to mark the presence of a Header object$/;"	kind:variable	line:13
 _has_header	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  _has_header = False #flag to mark the presence of a Header object$/;"	kind:variable	line:12
 _has_header	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  _has_header = True #flag to mark the presence of a Header object$/;"	kind:variable	line:173
-_init	../src/code/scripts/globalvalue.py	/^def _init():$/;"	kind:function	line:3
+_init	../src/robot_service/scripts/globalvalue.py	/^def _init():$/;"	kind:function	line:3
 _md5sum	../devel/lib/python2.7/dist-packages/robot_service/msg/_LinkState.py	/^  _md5sum = "0818ebbf28ce3a08d48ab1eaa7309ebe"$/;"	kind:variable	line:11
 _md5sum	../devel/lib/python2.7/dist-packages/robot_service/msg/_ModelStates.py	/^  _md5sum = "48c080191eb15c41858319b4d8a609c2"$/;"	kind:variable	line:11
 _md5sum	../devel/lib/python2.7/dist-packages/robot_service/msg/_Point.py	/^  _md5sum = "4a842b65f413084dc2b10fb484ea7f17"$/;"	kind:variable	line:10
@@ -147,13 +151,13 @@ _type	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^  _type
 _type	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  _type          = 'robot_service\/GetModelState'$/;"	kind:variable	line:443
 _type	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  _type = "robot_service\/GetModelStateRequest"$/;"	kind:variable	line:11
 _type	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  _type = "robot_service\/GetModelStateResponse"$/;"	kind:variable	line:172
-add_box	../src/code/scripts/MG_jointcontrol.py	/^  def add_box(self, timeout=4):$/;"	kind:member	line:352
-all_close	../src/code/scripts/MG_jointcontrol.py	/^def all_close(goal, actual, tolerance):$/;"	kind:function	line:58
+add_box	../src/robot_service/scripts/MG_jointcontrol.py	/^  def add_box(self, timeout=4):$/;"	kind:member	line:352
+all_close	../src/robot_service/scripts/MG_jointcontrol.py	/^def all_close(goal, actual, tolerance):$/;"	kind:function	line:58
 all_level	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^    all_level = all_level | param['level']$/;"	kind:variable	line:35
 all_level	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^all_level = 0$/;"	kind:variable	line:20
 args	../devel/_setup_util.py	/^            args = _parse_arguments()$/;"	kind:variable	line:259
 assignment	../devel/_setup_util.py	/^def assignment(key, value):$/;"	kind:function	line:175
-attach_box	../src/code/scripts/MG_jointcontrol.py	/^  def attach_box(self, timeout=4):$/;"	kind:member	line:377
+attach_box	../src/robot_service/scripts/MG_jointcontrol.py	/^  def attach_box(self, timeout=4):$/;"	kind:member	line:377
 base_path	../devel/_setup_util.py	/^        base_path = os.path.dirname(__file__)$/;"	kind:variable	line:267
 comment	../devel/_setup_util.py	/^def comment(msg):$/;"	kind:function	line:182
 compilation_database_folder	../.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	kind:variable	line:31
@@ -177,31 +181,34 @@ deserialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quater
 deserialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^  def deserialize_numpy(self, str, numpy):$/;"	kind:function	line:101
 deserialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  def deserialize_numpy(self, str, numpy):$/;"	kind:function	line:126
 deserialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  def deserialize_numpy(self, str, numpy):$/;"	kind:function	line:381
-detach_box	../src/code/scripts/MG_jointcontrol.py	/^  def detach_box(self, timeout=4):$/;"	kind:member	line:405
-display_trajectory	../src/code/scripts/MG_jointcontrol.py	/^  def display_trajectory(self, plan):$/;"	kind:member	line:267
-env_api.py	../src/code/scripts/env_api.py	1;"	kind:file	line:1
+detach_box	../src/robot_service/scripts/MG_jointcontrol.py	/^  def detach_box(self, timeout=4):$/;"	kind:member	line:405
+display_trajectory	../src/robot_service/scripts/MG_jointcontrol.py	/^  def display_trajectory(self, plan):$/;"	kind:member	line:267
+env_api.py	../src/robot_service/scripts/env_api.py	1;"	kind:file	line:1
 environ	../devel/_setup_util.py	/^        environ = dict(os.environ)$/;"	kind:variable	line:272
-execute_plan	../src/code/scripts/MG_jointcontrol.py	/^  def execute_plan(self, plan):$/;"	kind:member	line:293
+execute_plan	../src/robot_service/scripts/MG_jointcontrol.py	/^  def execute_plan(self, plan):$/;"	kind:member	line:293
 find_env_hooks	../devel/_setup_util.py	/^def find_env_hooks(environ, cmake_prefix_path):$/;"	kind:function	line:198
+fk_move	../src/robot_service/scripts/training_data/moveit_fk_controller.py	/^    def fk_move(self):$/;"	kind:member	line:32
 flags	../.ycm_extra_conf.py	/^flags = [$/;"	kind:variable	line:6
 gen	../src/diff_drive_controller/cfg/DiffDriveController.cfg	/^gen = ParameterGenerator()$/;"	kind:variable	line:7
-get_observation	../src/code/scripts/env_api.py	/^    def get_observation(self):$/;"	kind:member	line:43
-get_reward	../src/code/scripts/env_api.py	/^    def get_reward(self):$/;"	kind:member	line:112
-get_value	../src/code/scripts/globalvalue.py	/^def get_value(name, defValue=None):$/;"	kind:function	line:10
-globalvalue.py	../src/code/scripts/globalvalue.py	1;"	kind:file	line:1
-go_to_joint_state	../src/code/scripts/MG_jointcontrol.py	/^  def go_to_joint_state(self):$/;"	kind:member	line:148
-go_to_pose_goal	../src/code/scripts/MG_jointcontrol.py	/^  def go_to_pose_goal(self):$/;"	kind:member	line:192
+get_observation	../src/robot_service/scripts/env_api.py	/^    def get_observation(self):$/;"	kind:member	line:43
+get_reward	../src/robot_service/scripts/env_api.py	/^    def get_reward(self):$/;"	kind:member	line:112
+get_value	../src/robot_service/scripts/globalvalue.py	/^def get_value(name, defValue=None):$/;"	kind:function	line:10
+globalvalue.py	../src/robot_service/scripts/globalvalue.py	1;"	kind:file	line:1
+go_to_joint_state	../src/robot_service/scripts/MG_jointcontrol.py	/^  def go_to_joint_state(self):$/;"	kind:member	line:148
+go_to_pose_goal	../src/robot_service/scripts/MG_jointcontrol.py	/^  def go_to_pose_goal(self):$/;"	kind:member	line:192
 inf	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^inf = float('inf')$/;"	kind:variable	line:11
 level	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^level = {}$/;"	kind:variable	line:18
 lines	../devel/_setup_util.py	/^        lines = []$/;"	kind:variable	line:273
-main	../src/code/scripts/MG_jointcontrol.py	/^def main():$/;"	kind:function	line:445
-main	../src/code/scripts/env_api.py	/^def main():$/;"	kind:function	line:127
-main	../src/code/scripts/random_input.py	/^def main():$/;"	kind:function	line:40
-main	../src/code/scripts/sent_velocity_client.py	/^def main():$/;"	kind:function	line:89
+main	../src/robot_service/scripts/MG_jointcontrol.py	/^def main():$/;"	kind:function	line:445
+main	../src/robot_service/scripts/env_api.py	/^def main():$/;"	kind:function	line:127
+main	../src/robot_service/scripts/random_input.py	/^def main():$/;"	kind:function	line:40
+main	../src/robot_service/scripts/sent_velocity_client.py	/^def main():$/;"	kind:function	line:89
 max	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^max = {}$/;"	kind:variable	line:16
 min	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^min = {}$/;"	kind:variable	line:15
-move_arm	../src/code/scripts/sent_velocity_client.py	/^def move_arm():$/;"	kind:function	line:83
-plan_cartesian_path	../src/code/scripts/MG_jointcontrol.py	/^  def plan_cartesian_path(self, scale=1):$/;"	kind:member	line:228
+move_arm	../src/robot_service/scripts/sent_velocity_client.py	/^def move_arm():$/;"	kind:function	line:83
+moveit_fk_controller.py	../src/robot_service/scripts/training_data/moveit_fk_controller.py	1;"	kind:file	line:1
+moveit_fk_demo.py	../src/robot_service/scripts/training_data/moveit_fk_demo.py	1;"	kind:file	line:1
+plan_cartesian_path	../src/robot_service/scripts/MG_jointcontrol.py	/^  def plan_cartesian_path(self, scale=1):$/;"	kind:member	line:228
 prepend	../devel/_setup_util.py	/^def prepend(environ, key, prefix):$/;"	kind:function	line:189
 prepend_env_variables	../devel/_setup_util.py	/^def prepend_env_variables(environ, env_var_subfolders, workspaces):$/;"	kind:function	line:129
 python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_LinkState.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
@@ -212,12 +219,12 @@ python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quaternion.py	/^
 python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
 python3	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:163
 python3	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
-random_input.py	../src/code/scripts/random_input.py	1;"	kind:file	line:1
-read_model_state	../src/code/scripts/sent_velocity_client.py	/^    def read_model_state(self):$/;"	kind:member	line:19
-remove_box	../src/code/scripts/MG_jointcontrol.py	/^  def remove_box(self, timeout=4):$/;"	kind:member	line:424
+random_input.py	../src/robot_service/scripts/random_input.py	1;"	kind:file	line:1
+read_model_state	../src/robot_service/scripts/sent_velocity_client.py	/^    def read_model_state(self):$/;"	kind:member	line:19
+remove_box	../src/robot_service/scripts/MG_jointcontrol.py	/^  def remove_box(self, timeout=4):$/;"	kind:member	line:424
 rollback_env_variables	../devel/_setup_util.py	/^def rollback_env_variables(environ, env_var_subfolders):$/;"	kind:function	line:62
-send_data	../src/code/scripts/random_input.py	/^def send_data():$/;"	kind:function	line:13
-sent_velocity_client.py	../src/code/scripts/sent_velocity_client.py	1;"	kind:file	line:1
+send_data	../src/robot_service/scripts/random_input.py	/^def send_data():$/;"	kind:function	line:13
+sent_velocity_client.py	../src/robot_service/scripts/sent_velocity_client.py	1;"	kind:file	line:1
 serialize	../devel/lib/python2.7/dist-packages/robot_service/msg/_LinkState.py	/^  def serialize(self, buff):$/;"	kind:function	line:101
 serialize	../devel/lib/python2.7/dist-packages/robot_service/msg/_ModelStates.py	/^  def serialize(self, buff):$/;"	kind:function	line:96
 serialize	../devel/lib/python2.7/dist-packages/robot_service/msg/_Point.py	/^  def serialize(self, buff):$/;"	kind:function	line:55
@@ -234,9 +241,9 @@ serialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quaterni
 serialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^  def serialize_numpy(self, buff, numpy):$/;"	kind:function	line:89
 serialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  def serialize_numpy(self, buff, numpy):$/;"	kind:function	line:104
 serialize_numpy	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  def serialize_numpy(self, buff, numpy):$/;"	kind:function	line:355
-set_action	../src/code/scripts/env_api.py	/^    def set_action(self):$/;"	kind:member	line:27
-set_value	../src/code/scripts/globalvalue.py	/^def set_value(name, value):$/;"	kind:function	line:7
+set_action	../src/robot_service/scripts/env_api.py	/^    def set_action(self):$/;"	kind:member	line:27
+set_value	../src/robot_service/scripts/globalvalue.py	/^def set_value(name, value):$/;"	kind:function	line:7
 system	../devel/_setup_util.py	/^system = platform.system()$/;"	kind:variable	line:48
-talker	../src/code/scripts/sent_velocity_client.py	/^def talker():$/;"	kind:function	line:54
+talker	../src/robot_service/scripts/sent_velocity_client.py	/^def talker():$/;"	kind:function	line:54
 type	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^type = {}$/;"	kind:variable	line:19
-wait_for_state_update	../src/code/scripts/MG_jointcontrol.py	/^  def wait_for_state_update(self, box_is_known=False, box_is_attached=False, timeout=4):$/;"	kind:member	line:311
+wait_for_state_update	../src/robot_service/scripts/MG_jointcontrol.py	/^  def wait_for_state_update(self, box_is_known=False, box_is_attached=False, timeout=4):$/;"	kind:member	line:311
