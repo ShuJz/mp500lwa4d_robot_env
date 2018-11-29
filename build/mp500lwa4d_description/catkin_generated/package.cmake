@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "mp500lwa4d_description")
 set(mp500lwa4d_description_VERSION "0.0.0")
-set(mp500lwa4d_description_MAINTAINER "zheng <yangzhang1908@gmail.com>")
+set(mp500lwa4d_description_MAINTAINER "Jingzhe Shu <shujingzhe1996@gmail.com>")
 set(mp500lwa4d_description_PACKAGE_FORMAT "2")
 set(mp500lwa4d_description_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(mp500lwa4d_description_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")
