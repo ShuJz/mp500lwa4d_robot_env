@@ -12,17 +12,17 @@
         <rightJoint>wheel_right_joint</rightJoint>
         <wheelSeparation>0.51</wheelSeparation>
         <wheelDiameter>0.26</wheelDiameter>
-        <torque>45</torque>
+        <torque>30</torque>
         <commandTopic>/mobile_base_controller/cmd_vel</commandTopic>
         <odometryTopic>odom</odometryTopic>
         <odometryFrame>odom</odometryFrame>
-        <robotBaseFrame>base_link</robotBaseFrame>    
+        <robotBaseFrame>base_footprint</robotBaseFrame>    
         <legacyMode>false</legacyMode>
         <rosDebugLevel>Debug</rosDebugLevel>
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
-        <wheelAcceleration>2.4</wheelAcceleration>
-        <wheelTorque>50</wheelTorque>
+        <wheelAcceleration>0.01</wheelAcceleration>
+        <wheelTorque>30</wheelTorque>
         <publishTf>1</publishTf>
         <odometrySource>encoder</odometrySource>
         </plugin>
@@ -30,7 +30,7 @@
         <!--plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so"-->
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
             <robotNamespace>/mp500lwa4d</robotNamespace>
-            <robotBaseFrame>base_link</robotBaseFrame>
+            <robotBaseFrame>base_footprint</robotBaseFrame>
         </plugin>
 
     </gazebo>

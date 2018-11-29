@@ -2,27 +2,31 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
         
       <!-- Base Link -->
+      <gazebo reference="base_footprint">
+          <material value="Gazebo/Grey"/>
+      </gazebo>
       <gazebo reference="base_link">
-          <gravity>true</gravity>
+          <gravity>false</gravity>
+          <material value="Gazebo/Grey"/>
       </gazebo>
 
       <!-- Left Wheel -->
       <gazebo reference="wheel_left_link">
           <gravity>true</gravity>
-          <mu1>1000.0</mu1>
-          <mu2>500.0</mu2>
+          <mu1>100.5</mu1>
+          <mu2>100.5</mu2>
           <kp>1000000.0</kp>
-          <kd>1.0</kd>
+          <kd>100.0</kd>
           <fdir1 value="1 0 0"/>
           <material value="Gazebo/Grey"/>
       </gazebo>
       <!-- Right Wheel -->
       <gazebo reference="wheel_right_link">
           <gravity>true</gravity>
-          <mu1>1000.0</mu1>
-          <mu2>500.0</mu2>
+          <mu1>100.5</mu1>
+          <mu2>100.5</mu2>
           <kp>1000000.0</kp>
-          <kd>1.0</kd>
+          <kd>100.0</kd>
           <fdir1 value="1 0 0"/>
           <material value="Gazebo/Grey"/>
       </gazebo>
