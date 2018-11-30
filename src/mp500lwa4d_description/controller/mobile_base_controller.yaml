@@ -16,7 +16,7 @@ mp500lwa4d:
 
     # Wheel separation and radius multipliers
     wheel_separation: 0.51
-    wheel_radius: 0.13
+    wheel_radius: 0.125
     wheel_separation_multiplier: 1.0 # default: 1.0
     wheel_radius_multiplier: 1.0 # default: 1.0
 
