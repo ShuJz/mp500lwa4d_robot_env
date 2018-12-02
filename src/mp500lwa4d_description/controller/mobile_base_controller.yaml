@@ -2,7 +2,7 @@ mp500lwa4d:
   mobile_base_controller:
     type: "diff_drive_controller/DiffDriveController"
     publish_rate: 50
-    controller_frequency: 25.0
+    controller_frequency: 50.0
     controller_patience: 3.0
 
     left_wheel: ['wheel_left_joint']
@@ -33,20 +33,20 @@ mp500lwa4d:
     linear:
       x:
         has_velocity_limits: true
-        max_velocity: 1.5  # m/s
-        min_velocity: -1.5 # m/s
+        max_velocity: 5  # m/s
+        min_velocity: -5 # m/s
         has_acceleration_limits: true
-        max_acceleration: 2.4  # m/s^2
-        min_acceleration: -2.4 # m/s^2
+        max_acceleration: 10  # m/s^2
+        min_acceleration: -10 # m/s^2
         #has_jerk_limits: true
         #max_jerk: 5  # m/s^3
     angular:
       z:
         has_velocity_limits: true
-        max_velocity: 1  # rad/s
-        min_velocity: -1
+        max_velocity: 2  # rad/s
+        min_velocity: -2
         has_acceleration_limits: true
-        max_acceleration: 0.25  # rad/s^2
-        min_acceleration: -0.25
+        max_acceleration: 10  # rad/s^2
+        min_acceleration: -10
         #has_jerk_limits: true
         #max_jerk: 5  # rad/s^3

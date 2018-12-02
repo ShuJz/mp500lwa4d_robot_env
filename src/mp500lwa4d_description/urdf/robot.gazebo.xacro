@@ -12,7 +12,7 @@
         <rightJoint>wheel_right_joint</rightJoint>
         <wheelSeparation>0.51</wheelSeparation>
         <wheelDiameter>0.25</wheelDiameter>
-        <torque>30</torque>
+        <torque>100</torque>
         <commandTopic>/mobile_base_controller/cmd_vel</commandTopic>
         <odometryTopic>odom</odometryTopic>
         <odometryFrame>odom</odometryFrame>
@@ -21,8 +21,8 @@
         <rosDebugLevel>Debug</rosDebugLevel>
         <publishWheelTF>true</publishWheelTF>
         <publishWheelJointState>true</publishWheelJointState>
-        <wheelAcceleration>0.01</wheelAcceleration>
-        <wheelTorque>30</wheelTorque>
+        <wheelAcceleration>10</wheelAcceleration>
+        <wheelTorque>100</wheelTorque>
         <publishTf>1</publishTf>
         <odometrySource>encoder</odometrySource>
         </plugin>
