@@ -50,7 +50,14 @@
           i_clamp: 0
           antiwindup: false
           publish_state: true
-        arm_ee_joint:
+        gripper_finger_right_joint:
+          p: 10
+          i: 0.05
+          d: 1
+          i_clamp: 0
+          antiwindup: false
+          publish_state: true
+        gripper_finger_left_joint:
           p: 10
           i: 0.05
           d: 1

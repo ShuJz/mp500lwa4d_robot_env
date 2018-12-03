@@ -11,6 +11,9 @@
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/arm/arm_lwa4d.urdf.xacro" />
     <xacro:arm_lwa4d parent="base_link"/>
 
+    <xacro:include filename="$(find mp500lwa4d_description)/urdf/gripper/gripper_pg70.urdf.xacro" />
+    <xacro:gripper_pg70 parent="arm_7_link" has_podest="1"/>
+
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/sensor/rplidar.urdf.xacro" />
     <xacro:laser parent="base_link"/>
 
@@ -19,6 +22,8 @@
 
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/arm/arm.gazebo.xacro" />
 
+    <xacro:include filename="$(find mp500lwa4d_description)/urdf/gripper/gripper.gazebo.xacro" />
+
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/sensor/rplidar.gazebo.xacro" />
 
 
@@ -26,6 +31,8 @@
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/base/base.transmission.xacro" />
 
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/arm/arm.transmission.xacro" />
+
+    <xacro:include filename="$(find mp500lwa4d_description)/urdf/gripper/gripper.transmission.xacro" />
 
     <!--+++++++++ ros controller +++++++++++-->
     <xacro:include filename="$(find mp500lwa4d_description)/urdf/robot.gazebo.xacro" />

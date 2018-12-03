@@ -51,7 +51,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_base_link"/>
             <child link="arm_1_link"/>
-            <limit effort="216" velocity="0.43633" lower="${-M_PI+safety_offset}" upper="${M_PI-safety_offset}"/>
+            <limit effort="2160" velocity="0.43633" lower="${-M_PI+safety_offset}" upper="${M_PI-safety_offset}"/>
         </joint>
     <!-- arm_1_link-->
         <link name="arm_1_link">
@@ -84,7 +84,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_1_link"/>
             <child link="arm_2_link"/>
-            <limit effort="216" velocity="0.43633" lower="${-2.14 + safety_offset}" upper="${2.14 - safety_offset}"/>
+            <limit effort="2160" velocity="0.43633" lower="${-2.14 + safety_offset}" upper="${2.14 - safety_offset}"/>
         </joint>
     <!-- arm_2_link -->
         <link name="arm_2_link">
@@ -117,7 +117,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_2_link"/>
             <child link="arm_3_link"/>
-            <limit effort="81.5" velocity="0.4189" lower="${-M_PI + safety_offset}" upper="${M_PI - safety_offset}"/>
+            <limit effort="8150" velocity="0.4189" lower="${-M_PI + safety_offset}" upper="${M_PI - safety_offset}"/>
         </joint>
     <!-- arm_3_link -->
         <link name="arm_3_link">
@@ -150,7 +150,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_3_link"/>
             <child link="arm_4_link"/>
-            <limit effort="81.5" velocity="0.4189" lower="${-2.18 + safety_offset}" upper="${2.18 - safety_offset}"/>
+            <limit effort="8150" velocity="0.4189" lower="${-2.18 + safety_offset}" upper="${2.18 - safety_offset}"/>
         </joint>
     <!--arm_4_link -->
         <link name="arm_4_link">
@@ -184,7 +184,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_4_link"/>
             <child link="arm_5_link"/>
-            <limit effort="20.7" velocity="0.43633" lower="${-M_PI + safety_offset}" upper="${M_PI - safety_offset}"/>
+            <limit effort="2070" velocity="0.43633" lower="${-M_PI + safety_offset}" upper="${M_PI - safety_offset}"/>
         </joint>
     <!-- arm_5_link -->
         <link name="arm_5_link">
@@ -218,7 +218,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_5_link"/>
             <child link="arm_6_link"/>
-            <limit effort="15" velocity="1.2566" lower="${-2.96 + safety_offset}" upper="${2.96 - safety_offset}"/>
+            <limit effort="1500" velocity="1.2566" lower="${-2.96 + safety_offset}" upper="${2.96 - safety_offset}"/>
         </joint>
     <!-- arm_6_link -->
         <link name="arm_6_link">
@@ -252,7 +252,7 @@
             <axis xyz="0 0 1"/>
             <parent link="arm_6_link"/>
             <child link="arm_7_link"/>
-            <limit effort="15" velocity="1.2566" lower="${-2.96 + safety_offset}" upper="${2.96 - safety_offset}"/>
+            <limit effort="1500" velocity="1.2566" lower="${-2.96 + safety_offset}" upper="${2.96 - safety_offset}"/>
         </joint>
     <!--arm_7_link -->
         <link name="arm_7_link">
@@ -277,20 +277,6 @@
                     <mesh filename="package://mp500lwa4d_description/meshes/lwa4d/arm_7_link.stl"/>
                 </geometry>
             </collision>
-        </link>
-
-        <joint name="arm_ee_joint" type="fixed">
-            <origin xyz="0 0 0.0824" rpy="0 0 0"/>
-            <parent link="arm_7_link"/>
-            <child link="arm_ee_link"/>
-        </joint>
-
-        <link name="arm_ee_link">
-            <inertial>
-                <mass value="0.01" />
-                <origin xyz="0 0 0" />
-                <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
-            </inertial>
         </link>
     
     </xacro:macro>

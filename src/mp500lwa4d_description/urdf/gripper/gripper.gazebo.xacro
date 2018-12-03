@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <gazebo reference="gripper_podest_link">
+      <gravity>false</gravity>
+      <self_collide>false</self_collide>
+      <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="gripper_palm_link">
+      <gravity>false</gravity>
+      <self_collide>false</self_collide>
+      <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="gripper_finger_left_link">
+      <gravity>false</gravity>
+      <self_collide>false</self_collide>
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="gripper_finger_right_link">
+      <gravity>false</gravity>
+      <self_collide>false</self_collide>
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+</robot>

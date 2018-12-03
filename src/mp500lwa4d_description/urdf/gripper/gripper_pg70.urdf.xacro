@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <xacro:macro name="gripper_pg70" params="parent has_podest">
+
+    <xacro:if value="${has_podest}">
+      <joint name="gripper_podest_joint" type="fixed">
+        <origin xyz="0 0 0.0824" rpy="0 0 0" />
+        <parent link="${parent}"/>
+        <child link="gripper_podest_link"/>
+      </joint>
+      <link name="gripper_podest_link">
+        <inertial>
+          <mass value="0.001" />
+          <origin xyz="0 0 0" />
+          <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0" rpy="0 ${M_PI} 0" />
+          <geometry>
+            <mesh filename="package://mp500lwa4d_description/meshes/pg70/arm_base_link.stl" />
+          </geometry>
+          <material name="black">
+            <color rgba="0 0 0 1"/>
+          </material>
+        </visual>
+
+        <collision>
+          <origin xyz="0 0 0" rpy="0 ${M_PI} 0" />
+          <geometry>
+            <mesh filename="package://mp500lwa4d_description/meshes/pg70/arm_base_link.stl" />
+          </geometry>
+        </collision>
+      </link>
+
+      <joint name="gripper_palm_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="gripper_podest_link"/>
+        <child link="gripper_palm_link"/>
+      </joint>
+    </xacro:if>
+
+    <xacro:unless value="${has_podest}">
+      <joint name="gripper_palm_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="${parent}"/>
+        <child link="gripper_palm_link" />
+      </joint>
+    </xacro:unless>
+
+    <link name="gripper_palm_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001" />
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://mp500lwa4d_description/meshes/pg70/pg70.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${0.040-0.5*0.0171}" rpy="0 0 0" />
+        <geometry>
+          <box size="0.082 0.114 0.080" />
+        </geometry>
+      </collision>
+    </link>
+
+
+    <joint name="gripper_finger_left_joint" type="prismatic" >
+      <origin xyz="0 -0.005 0.1139" rpy="0 0 0"/>
+      <parent link="gripper_palm_link" />
+      <child link="gripper_finger_left_link" />
+      <axis xyz="0 1 0" />
+      <limit effort="10" lower="-0.0301" upper="-0.005" velocity="0.041"/>
+    </joint>
+
+    <link name="gripper_finger_left_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001" />
+      </inertial>
+      <visual>
+        <geometry>
+          <box size="0.03 0.01 0.08"/>
+        </geometry>
+        <material name="black">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.03 0.01 0.08"/>
+        </geometry>
+      </collision>
+    </link>
+
+
+    <joint name="gripper_finger_right_joint" type="prismatic" >
+      <origin xyz="0 0.005 0.1139" rpy="-0 0 0"/>
+      <parent link="gripper_palm_link" />
+      <child link="gripper_finger_right_link" />
+      <axis xyz="0 1 0" />
+      <!--<mimic joint="gripper_finger_left_joint" multiplier="1" offset="0"/>-->
+      <limit effort="10" lower="0.005" upper="0.0301" velocity="0.041"/>
+    </joint>
+
+    <link name="gripper_finger_right_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001" />
+      </inertial>
+      <visual>
+        <geometry>
+          <box size="0.03 0.01 0.08"/>
+        </geometry>
+        <material name="black">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.03 0.01 0.08"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="grasping_frame"/>
+
+    <joint name="grasping_frame_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="grasping_frame"/>
+      <origin xyz="0 0 0.0824" rpy="0 0 0"/>
+    </joint>
+
+  </xacro:macro>
+</robot>

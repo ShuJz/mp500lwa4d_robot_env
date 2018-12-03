@@ -34,18 +34,20 @@
       <!-- Castor -->
       <gazebo reference="hanger">
           <gravity>true</gravity>
-          <mu1>0.0</mu1>
-          <mu2>0.0</mu2>
-          <material value="Gazebo/Grey"/>
-      </gazebo>
-
-      <gazebo reference="castor_front">
-          <gravity>true</gravity>
           <mu1>0.1</mu1>
           <mu2>0.1</mu2>
           <kp>1000000.0</kp>
           <kd>100.0</kd>
           <material value="Gazebo/Grey"/>
       </gazebo>
+
+      <!--<gazebo reference="castor_front">
+          <gravity>true</gravity>
+          <mu1>0.1</mu1>
+          <mu2>0.1</mu2>
+          <kp>1000000.0</kp>
+          <kd>100.0</kd>
+          <material value="Gazebo/Grey"/>
+      </gazebo>-->
 
 </robot>
