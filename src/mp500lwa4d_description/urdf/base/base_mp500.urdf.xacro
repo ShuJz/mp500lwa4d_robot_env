@@ -18,9 +18,10 @@
 	</link>
 	<link name="base_link">
 		<inertial>
-			<mass value="25.67" />
+			<mass value="1" />
 			<origin xyz="0 0 0.216" rpy="0 0 0"/>
-			<inertia ixx="0.54" ixy="0.0" ixz="0.0" iyy="1.08" iyz="0.0" izz="1.23" />
+			<!--<inertia ixx="0.54" ixy="0.0" ixz="0.0" iyy="1.08" iyz="0.0" izz="1.23" />-->
+			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
 		</inertial>
 
 		<visual name='body'>
@@ -160,7 +161,7 @@ axis momenta are :
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 -1.57" />
 			<geometry>
-				<sphere radius="0.00115"/>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/HANGER-WHEEL.STL" scale="0.01 0.01 0.01" />
 			</geometry>
 		</collision>
 	</link>
@@ -173,7 +174,7 @@ axis momenta are :
 	</joint>
 
 <!--+++++++++++++++ castor_front +++++++++++++++-->
-
+<!--
 	<link name="castor_front">
 		<inertial>
 			<mass value="0.001" />
@@ -202,7 +203,7 @@ axis momenta are :
 		<axis xyz="0 0 1"/>
 		<parent link="base_link" />
 		<child link="castor_front" />
-	</joint>
+	</joint>-->
 
 
 </robot>

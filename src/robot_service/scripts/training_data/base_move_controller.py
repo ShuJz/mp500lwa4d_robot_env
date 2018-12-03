@@ -18,8 +18,8 @@ class Stage:
     def __init__(self, linear = 0, angular = 0):
        self.linear  = linear
        self.angular = angular
-       self.velocity_linear  = 0.2
-       self.velocity_angular = 0.5
+       self.velocity_linear  = 0.5
+       self.velocity_angular = 0.8
        self.duration1 = 0
        self.duration2 = 0    
     
@@ -168,37 +168,37 @@ if __name__ == "__main__":
     pose_end.orientation.z = quaternion[2]
     pose_end.orientation.w = quaternion[3]
     count = 1
-    # while count<=5:
-    stage1, stage2, stage3 = relative_loc(pose_start, pose_end)
+    while count<=5:
+        stage1, stage2, stage3 = relative_loc(pose_start, pose_end)
 
-    print ("stage1 angular is" + str(stage1.angular))
-    print ("stage2 linear is" + str(stage2.linear))
-    print ("stage3 angular is" + str(stage3.angular))
+        print ("stage1 angular is" + str(stage1.angular))
+        print ("stage2 linear is" + str(stage2.linear))
+        print ("stage3 angular is" + str(stage3.angular))
 
-    print ("Begin stage1")
-    stage1.vel_pub()
-    print ("Finish stage1")
-    print ("duration_rotation is " + str(stage1.duration1))
-    print ("duration_transform is " + str(stage1.duration2))
-    rospy.sleep(1)
+        print ("Begin stage1")
+        stage1.vel_pub()
+        print ("Finish stage1")
+        print ("duration_rotation is " + str(stage1.duration1))
+        print ("duration_transform is " + str(stage1.duration2))
+        rospy.sleep(1)
 
-    print ("Begin stage2")
-    stage2.vel_pub()
-    print ("Finish stage2")
-    print ("stage2_transform is " + str(stage2.linear))
-    print ("duration_rotation is " + str(stage2.duration1))
-    print ("duration_transform is " + str(stage2.duration2))
-    rospy.sleep(1)
+        print ("Begin stage2")
+        stage2.vel_pub()
+        print ("Finish stage2")
+        print ("stage2_transform is " + str(stage2.linear))
+        print ("duration_rotation is " + str(stage2.duration1))
+        print ("duration_transform is " + str(stage2.duration2))
+        rospy.sleep(1)
 
-    print ("Begin stage3")
-    stage3.vel_pub()
-    print ("Finish stage3")
-    print ("duration_rotation is " + str(stage3.duration1))
-    print ("duration_transform is " + str(stage3.duration2))
-    rospy.sleep(1)
+        print ("Begin stage3")
+        stage3.vel_pub()
+        print ("Finish stage3")
+        print ("duration_rotation is " + str(stage3.duration1))
+        print ("duration_transform is " + str(stage3.duration2))
+        rospy.sleep(1)
 
-        # count += 1
-        # pose_start = read_model_state()
+        count += 1
+        pose_start = read_model_state()
 
     print('Target')
     print('The pose relative to world :')
@@ -207,5 +207,6 @@ if __name__ == "__main__":
     print("position in z direction : " + str(pose_end.position.z))
     print('Real')
     pose_real = read_model_state()
+    print('Done')
     while(1):
         rospy.sleep(1)
