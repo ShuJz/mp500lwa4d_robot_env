@@ -33,6 +33,7 @@ Pose	../devel/lib/python2.7/dist-packages/robot_service/msg/_Pose.py	/^class Pos
 Quaternion	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quaternion.py	/^class Quaternion(genpy.Message):$/;"	kind:class	line:9
 ReadState	../src/robot_service/scripts/sent_velocity_client.py	/^class ReadState:$/;"	kind:class	line:16
 SOURCE_EXTENSIONS	../.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c' ]$/;"	kind:variable	line:38
+Stage	../src/robot_service/scripts/training_data/base_move_controller.py	/^class Stage:$/;"	kind:class	line:17
 Twist	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^class Twist(genpy.Message):$/;"	kind:class	line:10
 _GetModelState.py	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	1;"	kind:file	line:1
 _LinkState.py	../devel/lib/python2.7/dist-packages/robot_service/msg/_LinkState.py	1;"	kind:file	line:1
@@ -51,6 +52,7 @@ __init__	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.p
 __init__	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^  def __init__(self, *args, **kwds):$/;"	kind:function	line:245
 __init__	../src/robot_service/scripts/MG_jointcontrol.py	/^  def __init__(self):$/;"	kind:member	line:82
 __init__	../src/robot_service/scripts/env_api.py	/^    def __init__(self,goal):$/;"	kind:member	line:22
+__init__	../src/robot_service/scripts/training_data/base_move_controller.py	/^    def __init__(self, linear = 0, angular = 0):$/;"	kind:member	line:18
 __init__	../src/robot_service/scripts/training_data/moveit_fk_controller.py	/^    def __init__(self, joint_positions):$/;"	kind:member	line:9
 __init__.py	../devel/lib/python2.7/dist-packages/diff_drive_controller/__init__.py	1;"	kind:file	line:1
 __init__.py	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/__init__.py	1;"	kind:file	line:1
@@ -161,6 +163,7 @@ base_path	../devel/_setup_util.py	/^        base_path = os.path.dirname(__file__
 comment	../devel/_setup_util.py	/^def comment(msg):$/;"	kind:function	line:182
 compilation_database_folder	../.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	kind:variable	line:31
 config_description	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^config_description = {'upper': 'DEFAULT', 'lower': 'groups', 'srcline': 245, 'name': 'Default', 'parent': 0, 'srcfile': '\/opt\/ros\/kinetic\/lib\/python2.7\/dist-packages\/dynamic_reconfigure\/parameter_generator_catkin.py', 'cstate': 'true', 'parentname': 'Default', 'class': 'DEFAULT', 'field': 'default', 'state': True, 'parentclass': '', 'groups': [], 'parameters': [{'srcline': 290, 'description': 'Left wheel radius multiplier.', 'max': 1.5, 'cconsttype': 'const double', 'ctype': 'double', 'srcfile': '\/opt\/ros\/kinetic\/lib\/python2.7\/dist-packages\/dynamic_reconfigure\/parameter_generator_catkin.py', 'name': 'left_wheel_radius_multiplier', 'edit_method': '', 'default': 1.0, 'level': 0, 'min': 0.5, 'type': 'double'}, {'srcline': 290, 'description': 'Right wheel radius multiplier.', 'max': 1.5, 'cconsttype': 'const double', 'ctype': 'double', 'srcfile': '\/opt\/ros\/kinetic\/lib\/python2.7\/dist-packages\/dynamic_reconfigure\/parameter_generator_catkin.py', 'name': 'right_wheel_radius_multiplier', 'edit_method': '', 'default': 1.0, 'level': 0, 'min': 0.5, 'type': 'double'}, {'srcline': 290, 'description': 'Wheel separation multiplier.', 'max': 1.5, 'cconsttype': 'const double', 'ctype': 'double', 'srcfile': '\/opt\/ros\/kinetic\/lib\/python2.7\/dist-packages\/dynamic_reconfigure\/parameter_generator_catkin.py', 'name': 'wheel_separation_multiplier', 'edit_method': '', 'default': 1.0, 'level': 0, 'min': 0.5, 'type': 'double'}, {'srcline': 290, 'description': 'Publish rate of odom.', 'max': 2000.0, 'cconsttype': 'const double', 'ctype': 'double', 'srcfile': '\/opt\/ros\/kinetic\/lib\/python2.7\/dist-packages\/dynamic_reconfigure\/parameter_generator_catkin.py', 'name': 'publish_rate', 'edit_method': '', 'default': 50.0, 'level': 0, 'min': 0.0, 'type': 'double'}, {'srcline': 290, 'description': 'Publish odom frame to tf.', 'max': True, 'cconsttype': 'const bool', 'ctype': 'bool', 'srcfile': '\/opt\/ros\/kinetic\/lib\/python2.7\/dist-packages\/dynamic_reconfigure\/parameter_generator_catkin.py', 'name': 'enable_odom_tf', 'edit_method': '', 'default': True, 'level': 0, 'min': False, 'type': 'bool'}], 'type': '', 'id': 0}$/;"	kind:variable	line:13
+count	../src/robot_service/scripts/training_data/base_move_controller.py	/^    count = 1$/;"	kind:variable	line:170
 database	../.ycm_extra_conf.py	/^  database = None$/;"	kind:variable	line:36
 database	../.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	kind:variable	line:34
 defaults	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^defaults = {}$/;"	kind:variable	line:17
@@ -189,6 +192,7 @@ find_env_hooks	../devel/_setup_util.py	/^def find_env_hooks(environ, cmake_prefi
 fk_move	../src/robot_service/scripts/training_data/moveit_fk_controller.py	/^    def fk_move(self):$/;"	kind:member	line:32
 flags	../.ycm_extra_conf.py	/^flags = [$/;"	kind:variable	line:6
 gen	../src/diff_drive_controller/cfg/DiffDriveController.cfg	/^gen = ParameterGenerator()$/;"	kind:variable	line:7
+get_duration	../src/robot_service/scripts/training_data/base_move_controller.py	/^    def get_duration(self):$/;"	kind:member	line:26
 get_observation	../src/robot_service/scripts/env_api.py	/^    def get_observation(self):$/;"	kind:member	line:43
 get_reward	../src/robot_service/scripts/env_api.py	/^    def get_reward(self):$/;"	kind:member	line:112
 get_value	../src/robot_service/scripts/globalvalue.py	/^def get_value(name, defValue=None):$/;"	kind:function	line:10
@@ -205,10 +209,17 @@ main	../src/robot_service/scripts/sent_velocity_client.py	/^def main():$/;"	kind
 max	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^max = {}$/;"	kind:variable	line:16
 min	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^min = {}$/;"	kind:variable	line:15
 move_arm	../src/robot_service/scripts/sent_velocity_client.py	/^def move_arm():$/;"	kind:function	line:83
+moveit_cartesian_controller.py	../src/robot_service/scripts/training_data/moveit_cartesian_controller.py	1;"	kind:file	line:1
 moveit_fk_controller.py	../src/robot_service/scripts/training_data/moveit_fk_controller.py	1;"	kind:file	line:1
 plan_cartesian_path	../src/robot_service/scripts/MG_jointcontrol.py	/^  def plan_cartesian_path(self, scale=1):$/;"	kind:member	line:228
+pose_end	../src/robot_service/scripts/training_data/base_move_controller.py	/^    pose_end   = Pose()$/;"	kind:variable	line:157
+pose_real	../src/robot_service/scripts/training_data/base_move_controller.py	/^    pose_real = read_model_state()$/;"	kind:variable	line:209
+pose_start	../src/robot_service/scripts/training_data/base_move_controller.py	/^        pose_start = read_model_state()$/;"	kind:variable	line:201
+pose_start	../src/robot_service/scripts/training_data/base_move_controller.py	/^    pose_start = Pose()$/;"	kind:variable	line:156
+pose_start	../src/robot_service/scripts/training_data/base_move_controller.py	/^    pose_start = read_model_state()$/;"	kind:variable	line:159
 prepend	../devel/_setup_util.py	/^def prepend(environ, key, prefix):$/;"	kind:function	line:189
 prepend_env_variables	../devel/_setup_util.py	/^def prepend_env_variables(environ, env_var_subfolders, workspaces):$/;"	kind:function	line:129
+pub_mobile	../src/robot_service/scripts/training_data/base_move_controller.py	/^    pub_mobile = rospy.Publisher('\/mp500lwa4d\/mobile_base_controller\/cmd_vel', Twist, queue_size=10)$/;"	kind:variable	line:152
 python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_LinkState.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
 python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_ModelStates.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
 python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_Point.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
@@ -217,8 +228,12 @@ python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_Quaternion.py	/^
 python3	../devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
 python3	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:163
 python3	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py	/^python3 = True if sys.hexversion > 0x03000000 else False$/;"	kind:variable	line:4
+quaternion	../src/robot_service/scripts/training_data/base_move_controller.py	/^    quaternion = quaternion_from_euler(0, 0, 1.5707)$/;"	kind:variable	line:165
 random_input.py	../src/robot_service/scripts/random_input.py	1;"	kind:file	line:1
+rate	../src/robot_service/scripts/training_data/base_move_controller.py	/^    rate = rospy.Rate(50)  # 50hz$/;"	kind:variable	line:154
 read_model_state	../src/robot_service/scripts/sent_velocity_client.py	/^    def read_model_state(self):$/;"	kind:member	line:19
+read_model_state	../src/robot_service/scripts/training_data/base_move_controller.py	/^def read_model_state():$/;"	kind:function	line:115
+relative_loc	../src/robot_service/scripts/training_data/base_move_controller.py	/^def relative_loc(pose_start,pose_end):$/;"	kind:function	line:74
 remove_box	../src/robot_service/scripts/MG_jointcontrol.py	/^  def remove_box(self, timeout=4):$/;"	kind:member	line:424
 rollback_env_variables	../devel/_setup_util.py	/^def rollback_env_variables(environ, env_var_subfolders):$/;"	kind:function	line:62
 send_data	../src/robot_service/scripts/random_input.py	/^def send_data():$/;"	kind:function	line:13
@@ -244,4 +259,5 @@ set_value	../src/robot_service/scripts/globalvalue.py	/^def set_value(name, valu
 system	../devel/_setup_util.py	/^system = platform.system()$/;"	kind:variable	line:48
 talker	../src/robot_service/scripts/sent_velocity_client.py	/^def talker():$/;"	kind:function	line:54
 type	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^type = {}$/;"	kind:variable	line:19
+vel_pub	../src/robot_service/scripts/training_data/base_move_controller.py	/^    def vel_pub(self): #velocity publisher$/;"	kind:member	line:29
 wait_for_state_update	../src/robot_service/scripts/MG_jointcontrol.py	/^  def wait_for_state_update(self, box_is_known=False, box_is_attached=False, timeout=4):$/;"	kind:member	line:311

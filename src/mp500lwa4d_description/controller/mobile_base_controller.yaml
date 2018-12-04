@@ -48,5 +48,5 @@ mp500lwa4d:
         has_acceleration_limits: true
         max_acceleration: 10  # rad/s^2
         min_acceleration: -10
-        #has_jerk_limits: true
-        #max_jerk: 5  # rad/s^3
+      #has_jerk_limits: true
+      #max_jerk: 5  # rad/s^3

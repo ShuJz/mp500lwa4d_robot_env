@@ -3,6 +3,10 @@
 
     <gazebo>
 
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/mp500lwa4d</robotNamespace>
+            <robotBaseFrame>base_footprint</robotBaseFrame>
+        </plugin>
 
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
         <robotNamespace>/mp500lwa4d</robotNamespace>		  
@@ -28,10 +32,7 @@
         </plugin>
 
         <!--plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so"-->
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/mp500lwa4d</robotNamespace>
-            <robotBaseFrame>base_footprint</robotBaseFrame>
-        </plugin>
+        
 
     </gazebo>
   </robot>
