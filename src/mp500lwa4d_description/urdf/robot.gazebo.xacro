@@ -32,7 +32,13 @@
         </plugin>
 
         <!--plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so"-->
+<<<<<<< HEAD
         
+=======
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/mp500lwa4d</robotNamespace>
+        </plugin>
+>>>>>>> Debug
 
     </gazebo>
   </robot>
