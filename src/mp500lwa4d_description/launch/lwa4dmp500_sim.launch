@@ -26,21 +26,11 @@
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
     respawn="false" output="screen">
-<<<<<<< HEAD
-    <!--<remap from="/joint_states" to="/mp500lwa4d/joint_states" />-->
-=======
-    <remap from="/joint_states" to="/mp500lwa4d/joint_states" />
->>>>>>> Debug
   </node>
 
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" >
       <param name="use_gui" value="false" />
       <param name="rate" value="50" />
-<<<<<<< HEAD
-      <!--<rosparam param="/source_list">[/mp500lwa4d/joint_states]</rosparam>-->
-=======
-      <rosparam param="/source_list">[/mp500lwa4d/joint_states]</rosparam>
->>>>>>> Debug
   </node>
   
   <!-- Fake Calibration -->

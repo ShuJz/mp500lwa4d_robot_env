@@ -16,7 +16,7 @@ class MoveItCartesianDemo:
         rospy.init_node('moveit_cartesian_controller', anonymous=True)
         
         # 是否需要使用笛卡尔空间的运动规划
-        cartesian = rospy.get_param('~cartesian', True)
+        cartesian = rospy.get_param('~cartesian', False)
                         
         # 初始化需要使用move group控制的机械臂中的arm group
         arm = MoveGroupCommander('arm')
@@ -52,7 +52,7 @@ class MoveItCartesianDemo:
         # 设置第二个路点数据，并加入路点列表
         # 第二个路点需要向后运动0.01米，向右运动0.01米
         wpose = deepcopy(start_pose)
-        wpose.position.x -= 0.05
+        wpose.position.x -= 0.5
         wpose.position.y += 0.05
         wpose.position.z -= 0
 

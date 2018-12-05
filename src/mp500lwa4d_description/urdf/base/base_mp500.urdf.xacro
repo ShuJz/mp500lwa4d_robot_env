@@ -18,18 +18,10 @@
 	</link>
 	<link name="base_link">
 		<inertial>
-<<<<<<< HEAD
 			<mass value="1" />
 			<!--<origin xyz="0 0 0.216" rpy="0 0 0"/>-->
 			<!--<inertia ixx="0.54" ixy="0.0" ixz="0.0" iyy="1.08" iyz="0.0" izz="1.23" />-->
 			<inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
-=======
-			<mass value="100"/>
-        	<inertia ixx="0.5" ixy="0" ixz="0" iyy="0.5" iyz="0" izz="0.5" />
-			<!--<mass value="25.67" />
-			<origin xyz="0 0 0.216" rpy="0 0 0"/>
-			<inertia ixx="0.54" ixy="0.0" ixz="0.0" iyy="1.08" iyz="0.0" izz="1.23" />-->
->>>>>>> Debug
 		</inertial>
 
 		<visual name='body'>
@@ -180,43 +172,5 @@ axis momenta are :
 		<parent link="base_link" />
 		<child link="hanger" />
 	</joint>
-
-<!--+++++++++++++++ castor_front +++++++++++++++-->
-<<<<<<< HEAD
-<!--
-	<link name="castor_front">
-=======
-
-	<!--<link name="castor_front">
->>>>>>> Debug
-		<inertial>
-			<mass value="0.001" />
-			<origin xyz="0 0 0" rpy="0 0 0" />
-			<inertia ixx="0.000025" ixy="0" ixz="0" iyy="0.000025" iyz="0" izz="0.000025" />
-		</inertial>
-
-		<visual>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-			<geometry>
-				<sphere radius="0.005"/>    
-			</geometry>
-			<material name="Grey" />
-		</visual>
-
-		<collision>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-			<geometry>
-				<sphere radius="0.005"/>
-			</geometry>
-		</collision>
-	</link>
-
-	<joint name="castor_front_joint" type="fixed">
-		<origin xyz="0.3 0 0.01" rpy="0 0 0"/>
-		<axis xyz="0 0 1"/>
-		<parent link="base_link" />
-		<child link="castor_front" />
-	</joint>-->
-
 
 </robot>

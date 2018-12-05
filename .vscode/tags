@@ -26,6 +26,8 @@ MG_jointcontrol.py	../src/robot_service/scripts/MG_jointcontrol.py	1;"	kind:file
 MakeRelativePathsInFlagsAbsolute	../.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	kind:function	line:44
 ModelStates	../devel/lib/python2.7/dist-packages/robot_service/msg/_ModelStates.py	/^class ModelStates(genpy.Message):$/;"	kind:class	line:10
 MoveGroupPythonIntefaceTutorial	../src/robot_service/scripts/MG_jointcontrol.py	/^class MoveGroupPythonIntefaceTutorial(object):$/;"	kind:class	line:80
+MoveItCartesianDemo	../src/robot_service/scripts/training_data/moveit_cartesian_controller.py	/^class MoveItCartesianDemo:$/;"	kind:class	line:10
+MoveItFkDemo	../src/robot_service/scripts/training_data/gripper_controller.py	/^class MoveItFkDemo:$/;"	kind:class	line:8
 MoveItFkDemo	../src/robot_service/scripts/training_data/moveit_fk_controller.py	/^class MoveItFkDemo:$/;"	kind:class	line:8
 PACKAGE	../src/diff_drive_controller/cfg/DiffDriveController.cfg	/^PACKAGE = 'diff_drive_controller'$/;"	kind:variable	line:3
 Point	../devel/lib/python2.7/dist-packages/robot_service/msg/_Point.py	/^class Point(genpy.Message):$/;"	kind:class	line:9
@@ -53,6 +55,8 @@ __init__	../devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.p
 __init__	../src/robot_service/scripts/MG_jointcontrol.py	/^  def __init__(self):$/;"	kind:member	line:82
 __init__	../src/robot_service/scripts/env_api.py	/^    def __init__(self,goal):$/;"	kind:member	line:22
 __init__	../src/robot_service/scripts/training_data/base_move_controller.py	/^    def __init__(self, linear = 0, angular = 0):$/;"	kind:member	line:18
+__init__	../src/robot_service/scripts/training_data/gripper_controller.py	/^    def __init__(self):$/;"	kind:member	line:9
+__init__	../src/robot_service/scripts/training_data/moveit_cartesian_controller.py	/^    def __init__(self):$/;"	kind:member	line:11
 __init__	../src/robot_service/scripts/training_data/moveit_fk_controller.py	/^    def __init__(self, joint_positions):$/;"	kind:member	line:9
 __init__.py	../devel/lib/python2.7/dist-packages/diff_drive_controller/__init__.py	1;"	kind:file	line:1
 __init__.py	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/__init__.py	1;"	kind:file	line:1
@@ -199,6 +203,7 @@ get_value	../src/robot_service/scripts/globalvalue.py	/^def get_value(name, defV
 globalvalue.py	../src/robot_service/scripts/globalvalue.py	1;"	kind:file	line:1
 go_to_joint_state	../src/robot_service/scripts/MG_jointcontrol.py	/^  def go_to_joint_state(self):$/;"	kind:member	line:148
 go_to_pose_goal	../src/robot_service/scripts/MG_jointcontrol.py	/^  def go_to_pose_goal(self):$/;"	kind:member	line:192
+gripper_controller.py	../src/robot_service/scripts/training_data/gripper_controller.py	1;"	kind:file	line:1
 inf	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^inf = float('inf')$/;"	kind:variable	line:11
 level	../devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py	/^level = {}$/;"	kind:variable	line:18
 lines	../devel/_setup_util.py	/^        lines = []$/;"	kind:variable	line:273

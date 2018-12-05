@@ -23,7 +23,6 @@ mp500lwa4d:
      - arm_7_joint
     
     constraints:
-<<<<<<< HEAD
         goal_time: 0.6
         stopped_velocity_tolerance: 0.05
         arm_1_joint: {trajectory: 0.3, goal: 0.1}
@@ -42,31 +41,6 @@ mp500lwa4d:
       arm_5_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
       arm_6_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
       arm_7_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
-=======
-        goal_time: &goal_time_constraint 4.0
-        stopped_velocity_tolerance: 0.5
-        arm_1_joint:
-          goal: &goal_pos_constraint 0.5
-          trajectory: &trajectory_pos_constraint 1.0
-        arm_2_joint:
-          goal: *goal_pos_constraint
-          trajectory: *trajectory_pos_constraint
-        arm_3_joint:
-          goal: *goal_pos_constraint
-          trajectory: *trajectory_pos_constraint
-        arm_4_joint:
-          goal: *goal_pos_constraint
-          trajectory: *trajectory_pos_constraint
-        arm_5_joint:
-          goal: *goal_pos_constraint
-          trajectory: *trajectory_pos_constraint
-        arm_6_joint:
-          goal: *goal_pos_constraint
-          trajectory: *trajectory_pos_constraint
-        arm_7_joint:
-          goal: *goal_pos_constraint
-          trajectory: *trajectory_pos_constraint
->>>>>>> Debug
     
     stop_trajectory_duration: 0.5
     state_publish_rate:  25

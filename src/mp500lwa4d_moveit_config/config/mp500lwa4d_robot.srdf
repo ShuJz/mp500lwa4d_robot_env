@@ -68,10 +68,7 @@
     <disable_collisions link1="arm_2_link" link2="base_footprint" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="base_link" reason="Never" />
     <!--<disable_collisions link1="arm_2_link" link2="castor_front" reason="Never" />-->
-<<<<<<< HEAD
-=======
     <disable_collisions link1="arm_2_link" link2="gripper_podest_link" reason="Never" />
->>>>>>> Debug
     <disable_collisions link1="arm_2_link" link2="hanger" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="laserscanner_front_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="wheel_left_link" reason="Never" />
@@ -84,10 +81,7 @@
     <disable_collisions link1="arm_3_link" link2="base_footprint" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="base_link" reason="Never" />
     <!--<disable_collisions link1="arm_3_link" link2="castor_front" reason="Never" />-->
-<<<<<<< HEAD
-=======
     <disable_collisions link1="arm_3_link" link2="gripper_podest_link" reason="Never" />
->>>>>>> Debug
     <disable_collisions link1="arm_3_link" link2="hanger" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="laserscanner_front_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="wheel_left_link" reason="Never" />
@@ -99,34 +93,25 @@
     <disable_collisions link1="arm_4_link" link2="base_footprint" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="base_link" reason="Never" />
     <!--<disable_collisions link1="arm_4_link" link2="castor_front" reason="Never" />-->
-<<<<<<< HEAD
-=======
     <disable_collisions link1="arm_4_link" link2="gripper_podest_link" reason="Never" />
->>>>>>> Debug
     <disable_collisions link1="arm_4_link" link2="hanger" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="laserscanner_front_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="wheel_right_link" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="arm_6_link" reason="Adjacent" />
-<<<<<<< HEAD
     <!--<disable_collisions link1="arm_5_link" link2="castor_front" reason="Never" />-->
-=======
     <disable_collisions link1="arm_5_link" link2="base_footprint" reason="Never" />
-    <!--<disable_collisions link1="arm_5_link" link2="castor_front" reason="Never" />-->
     <disable_collisions link1="arm_5_link" link2="gripper_finger_left_link" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="gripper_finger_right_link" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="gripper_podest_link" reason="Default" />
->>>>>>> Debug
     <disable_collisions link1="arm_5_link" link2="hanger" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="wheel_right_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="arm_7_link" reason="Adjacent" />
-<<<<<<< HEAD
     <!--<disable_collisions link1="arm_6_link" link2="castor_front" reason="Never" />-->
     <disable_collisions link1="arm_6_link" link2="hanger" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="laserscanner_front_link" reason="Never" />
     <!--<disable_collisions link1="arm_7_link" link2="castor_front" reason="Never" />-->
-=======
     <disable_collisions link1="arm_6_link" link2="base_footprint" reason="Never" />
     <!--<disable_collisions link1="arm_6_link" link2="castor_front" reason="Never" />-->
     <disable_collisions link1="arm_6_link" link2="gripper_finger_left_link" reason="Never" />
@@ -141,7 +126,6 @@
     <disable_collisions link1="arm_7_link" link2="gripper_finger_right_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="gripper_palm_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="gripper_podest_link" reason="Adjacent" />
->>>>>>> Debug
     <disable_collisions link1="arm_7_link" link2="hanger" reason="Never" />
     <disable_collisions link1="arm_podest_link" link2="base_footprint" reason="Never" />
     <disable_collisions link1="arm_podest_link" link2="base_link" reason="Adjacent" />
@@ -150,8 +134,6 @@
     <disable_collisions link1="arm_podest_link" link2="laserscanner_front_link" reason="Never" />
     <disable_collisions link1="arm_podest_link" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="arm_podest_link" link2="wheel_right_link" reason="Never" />
-<<<<<<< HEAD
-=======
     <disable_collisions link1="base_footprint" link2="base_link" reason="Adjacent" />
     <!--<disable_collisions link1="base_footprint" link2="castor_front" reason="Never" />-->
     <disable_collisions link1="base_footprint" link2="gripper_finger_left_link" reason="Never" />
@@ -162,18 +144,11 @@
     <disable_collisions link1="base_footprint" link2="laserscanner_front_link" reason="Never" />
     <disable_collisions link1="base_footprint" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="base_footprint" link2="wheel_right_link" reason="Never" />
->>>>>>> Debug
     <!--<disable_collisions link1="base_link" link2="castor_front" reason="Adjacent" />-->
     <disable_collisions link1="base_link" link2="hanger" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="laserscanner_front_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="wheel_left_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="wheel_right_link" reason="Adjacent" />
-<<<<<<< HEAD
-    <!--<disable_collisions link1="castor_front" link2="hanger" reason="Never" />
-    <disable_collisions link1="castor_front" link2="laserscanner_front_link" reason="Never" />
-    <disable_collisions link1="castor_front" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="castor_front" link2="wheel_right_link" reason="Never" />-->
-=======
     <!--<disable_collisions link1="castor_front" link2="gripper_finger_left_link" reason="Never" />
     <disable_collisions link1="castor_front" link2="gripper_finger_right_link" reason="Never" />
     <disable_collisions link1="castor_front" link2="gripper_palm_link" reason="Never" />
@@ -192,7 +167,6 @@
     <disable_collisions link1="gripper_palm_link" link2="gripper_podest_link" reason="Adjacent" />
     <disable_collisions link1="gripper_palm_link" link2="hanger" reason="Never" />
     <disable_collisions link1="gripper_podest_link" link2="hanger" reason="Never" />
->>>>>>> Debug
     <disable_collisions link1="hanger" link2="laserscanner_front_link" reason="Never" />
     <disable_collisions link1="hanger" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="hanger" link2="wheel_right_link" reason="Never" />

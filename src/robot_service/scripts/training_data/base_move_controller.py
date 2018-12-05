@@ -127,7 +127,7 @@ def read_model_state():
         print("position in x direction : " + str(resp_mobile_coordinates.pose.position.x))
         print("position in y direction : " + str(resp_mobile_coordinates.pose.position.y))
         print("position in z direction : " + str(resp_mobile_coordinates.pose.position.z))
-        rospy.sleep(10)
+        rospy.sleep(3)
 
         resp_arm_coordinates = resp_arm('arm_7_link', 'world')
         show_x = resp_arm_coordinates.link_state.pose.position.x
@@ -168,7 +168,7 @@ if __name__ == "__main__":
     pose_end.orientation.z = quaternion[2]
     pose_end.orientation.w = quaternion[3]
     count = 1
-    while count<=5:
+    while count<=1:
         stage1, stage2, stage3 = relative_loc(pose_start, pose_end)
 
         print ("stage1 angular is" + str(stage1.angular))
