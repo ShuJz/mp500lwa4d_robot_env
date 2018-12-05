@@ -2,65 +2,65 @@
       pid_gains:
      # these gains are used by the gazebo_ros_control plugin
         arm_1_joint:
-          p: 10
+          p: 100
           i: 0.05
-          d: 1
+          d: 0.01
           i_clamp: 0
           antiwindup: false
           publish_state: true
         arm_2_joint:
-          p: 10
-          i: 0.05
-          d: 1
+          p: 1560
+          i: 1000
+          d: 0.55
           i_clamp: 0
           antiwindup: false
           publish_state: true
         arm_3_joint:
-          p: 10
+          p: 100
           i: 0.05
-          d: 1
+          d: 0.01
           i_clamp: 0
           antiwindup: false
           publish_state: true
         arm_4_joint:
-          p: 10
-          i: 0.05
-          d: 1
+          p: 1560
+          i: 1000
+          d: 0.55
           i_clamp: 0
           antiwindup: false
           publish_state: true
         arm_5_joint:
-          p: 10
+          p: 100
           i: 0.05
-          d: 1
+          d: 0.01
           i_clamp: 0
           antiwindup: false
           publish_state: true
         arm_6_joint:
-          p: 10
+          p: 100
           i: 0.05
-          d: 1
+          d: 0.01
           i_clamp: 0
           antiwindup: false
           publish_state: true
         arm_7_joint:
-          p: 10
+          p: 100
           i: 0.05
-          d: 1
+          d: 0.01
           i_clamp: 0
           antiwindup: false
           publish_state: true
         gripper_finger_right_joint:
-          p: 10
+          p: 1000
           i: 0.05
-          d: 1
+          d: 0
           i_clamp: 0
           antiwindup: false
           publish_state: true
         gripper_finger_left_joint:
-          p: 10
+          p: 1000
           i: 0.05
-          d: 1
+          d: 0
           i_clamp: 0
           antiwindup: false
           publish_state: true     
