@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install
+
+Name: tf2
+Description: Description of tf2
+Version: 0.6.5
+Cflags: -I/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/include -I/usr/include
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/lib -ltf2 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+Requires: geometry_msgs tf2_msgs rostime

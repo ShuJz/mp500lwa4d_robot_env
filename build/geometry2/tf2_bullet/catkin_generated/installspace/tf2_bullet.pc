@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install
+
+Name: tf2_bullet
+Description: Description of tf2_bullet
+Version: 0.6.5
+Cflags: -I/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/include -I/usr/include/bullet
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/lib 
+Requires: 

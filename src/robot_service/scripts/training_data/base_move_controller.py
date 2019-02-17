@@ -44,7 +44,7 @@ class Stage:
             la.linear.x = 0
             la.angular.z = a_z
 
-            rospy.loginfo(la)
+            # rospy.loginfo(la)
             pub_mobile.publish(la)
 
             t_2 = rospy.get_time()
@@ -60,7 +60,7 @@ class Stage:
             la.linear.x = l_x
             la.angular.z = 0
 
-            rospy.loginfo(la)
+            # rospy.loginfo(la)
             pub_mobile.publish(la)
 
             rate.sleep()

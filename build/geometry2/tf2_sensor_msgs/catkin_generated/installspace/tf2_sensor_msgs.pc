@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install
+
+Name: tf2_sensor_msgs
+Description: Description of tf2_sensor_msgs
+Version: 0.6.5
+Cflags: -I/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/include -I/usr/include/eigen3
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/install/lib 
+Requires: sensor_msgs tf2_ros tf2

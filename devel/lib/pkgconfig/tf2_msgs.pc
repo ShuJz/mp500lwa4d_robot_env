@@ -1,0 +1,8 @@
+prefix=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel
+
+Name: tf2_msgs
+Description: Description of tf2_msgs
+Version: 0.6.5
+Cflags: -I/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include -I/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/geometry2/tf2_msgs/include
+Libs: -L/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib 
+Requires: message_generation geometry_msgs actionlib_msgs

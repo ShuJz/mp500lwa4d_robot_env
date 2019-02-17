@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="goal" >
+       
+    <!--<link name="world"/>
+
+    <joint name="fixed" type="fixed">
+        <parent link="world"/>
+        <child link="Goal"/>
+    </joint>-->
+
+    <link name="Goal">
+        <inertial>
+			<mass value="1" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+		</inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.2 0.2 0.2" />
+            </geometry>
+            <material name="Red" />
+        </visual>
+	</link>
+    
+    <gazebo reference="Goal">
+          <material value="Gazebo/Red"/>
+          <gravity>False</gravity>
+    </gazebo>
+
+
+</robot>

@@ -1,0 +1,9 @@
+# CMake generated Testfile for 
+# Source directory: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/geometry2/tf2
+# Build directory: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/geometry2/tf2
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(_ctest_tf2_gtest_test_cache_unittest "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/test_results/tf2/gtest-test_cache_unittest.xml" "--return-code" "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/tf2/test_cache_unittest --gtest_output=xml:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/test_results/tf2/gtest-test_cache_unittest.xml")
+add_test(_ctest_tf2_gtest_test_static_cache_unittest "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/test_results/tf2/gtest-test_static_cache_unittest.xml" "--return-code" "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/tf2/test_static_cache_unittest --gtest_output=xml:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/test_results/tf2/gtest-test_static_cache_unittest.xml")
+add_test(_ctest_tf2_gtest_test_simple "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/test_results/tf2/gtest-test_simple.xml" "--return-code" "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/tf2/test_simple --gtest_output=xml:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/test_results/tf2/gtest-test_simple.xml")

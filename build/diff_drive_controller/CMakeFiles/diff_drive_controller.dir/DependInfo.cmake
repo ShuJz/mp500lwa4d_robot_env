@@ -21,12 +21,19 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/diff_drive_controller/include"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/geometry/tf/include"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/geometry2/tf2_ros/include"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/geometry2/tf2/include"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/geometry2/tf2_msgs/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/geometry/tf/CMakeFiles/tf.dir/DependInfo.cmake"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/geometry2/tf2_ros/CMakeFiles/tf2_ros.dir/DependInfo.cmake"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/geometry2/tf2/CMakeFiles/tf2.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

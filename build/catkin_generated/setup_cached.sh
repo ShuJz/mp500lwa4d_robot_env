@@ -7,5 +7,5 @@
 # new environment variables
 
 # modified environment variables
+export PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/bin:/opt/ros/kinetic/bin:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/venv/bin:/home/jingzhe/bin:/home/jingzhe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 export PWD="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build"
-export ROS_PACKAGE_PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src:/home/jingzhe/WorkSpace/ROS/PR2/src:/home/jingzhe/catkin_ws/src:/home/jingzhe/WorkSpace/ROS/AlphaDemo/src:/home/jingzhe/WorkSpace/ROS/Rostutorials_HuCX/src:/opt/ros/kinetic/share"

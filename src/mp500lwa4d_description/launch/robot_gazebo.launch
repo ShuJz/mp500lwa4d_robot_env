@@ -1,14 +1,17 @@
 <?xml version="1.0"?>
 <launch>
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="world_name" value="$(find mp500lwa4d_description)/worlds/training.world"/>
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
   <arg name="model" default="$(find mp500lwa4d_description)/urdf/robot.urdf.xacro"/>
+  <arg name="model_goal" default="$(find mp500lwa4d_description)/urdf/goal.xacro"/>
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)" />
     <arg name="debug" value="$(arg debug)" />
     <arg name="gui" value="$(arg gui)" />
     <arg name="paused" value="$(arg paused)"/>
@@ -18,8 +21,10 @@
   </include>
   <!-- send robot urdf to param server -->
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
+  <param name="goal_description" command="$(find xacro)/xacro --inorder $(arg model_goal)"/>
   <!-- push robot_description to factory and spawn robot in gazebo -->
-  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model mp500lwa4d -z 0.1" respawn="false" output="screen" />
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model mp500lwa4d -z 0." respawn="false" output="screen" />
+  <node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -model goal -z 1." respawn="false" output="screen" />
 
   <!-- Fake Calibration -->
   <!--<node pkg="rostopic" type="rostopic" name="fake_joint_calibration"
@@ -32,7 +37,14 @@
   <!--rosparam file="$(find simple_robot_description)/controller/wheel_controller.yaml" command="load"/-->
   <rosparam file="$(find mp500lwa4d_description)/controller/mobile_base_controller.yaml" command="load"/>
 
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="mp500lwa4d" args="/mp500lwa4d/joint_state_controller /mp500lwa4d/mobile_base_controller /mp500lwa4d/arm/joint_trajectory_controller" respawn="true" output="screen">
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="mp500lwa4d" args="/mp500lwa4d/joint_state_controller /mp500lwa4d/mobile_base_controller 
+                                                                                                /mp500lwa4d/arm_1_joint_position_controller
+                                                                                                /mp500lwa4d/arm_2_joint_position_controller
+                                                                                                /mp500lwa4d/arm_3_joint_position_controller
+                                                                                                /mp500lwa4d/arm_4_joint_position_controller
+                                                                                                /mp500lwa4d/arm_5_joint_position_controller
+                                                                                                /mp500lwa4d/arm_6_joint_position_controller
+                                                                                                /mp500lwa4d/arm_7_joint_position_controller" respawn="true" output="screen">
      <param name="rate" value="50" />
   </node>
 
