@@ -1,4 +1,4 @@
-mp500lwa4d:
+worker1:
 ## joint_names
   joint_names: [arm_1_joint, arm_2_joint, arm_3_joint, arm_4_joint, arm_5_joint, arm_6_joint, arm_7_joint,gripper_finger_right_joint, gripper_finger_left_joint]
 
@@ -89,48 +89,34 @@ mp500lwa4d:
      - arm_7_joint
     required_drive_mode: 7
 
-  arm_1_joint_position_controller:
+  mp500lwa4d/arm_1_joint_position_controller:
     type: position_controllers/JointPositionController
     joint: arm_1_joint
     required_drive_mode: 1
-    gains:
-      arm_1_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
-  arm_2_joint_position_controller:
+  mp500lwa4d/arm_2_joint_position_controller:
     type: position_controllers/JointPositionController
     joint: arm_2_joint
     required_drive_mode: 1
-    gains:
-      arm_2_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
-  arm_3_joint_position_controller:
+  mp500lwa4d/arm_3_joint_position_controller:
     type: position_controllers/JointPositionController
     joint: arm_3_joint
     required_drive_mode: 1
-    gains:
-      arm_3_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
-  arm_4_joint_position_controller:
+  mp500lwa4d/arm_4_joint_position_controller:
     type: position_controllers/JointPositionController
     joint: arm_4_joint
     required_drive_mode: 1
-    gains:
-      arm_4_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
-  arm_5_joint_position_controller:
+  mp500lwa4d/arm_5_joint_position_controller:
     type: position_controllers/JointPositionController
     joint: arm_5_joint
     required_drive_mode: 1
-    gains:
-      arm_5_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
-  arm_6_joint_position_controller:
+  mp500lwa4d/arm_6_joint_position_controller:
     type: position_controllers/JointPositionController
     joint: arm_6_joint
     required_drive_mode: 1
-    gains:
-      arm_6_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
-  arm_7_joint_position_controller:
+  mp500lwa4d/arm_7_joint_position_controller:
     type: position_controllers/JointPositionController
     joint: arm_7_joint
     required_drive_mode: 1
-    gains:
-      arm_7_joint: {p: 10,  i: 0.01, d: 1, i_clamp: 1}
 
 
 ## velocity controller

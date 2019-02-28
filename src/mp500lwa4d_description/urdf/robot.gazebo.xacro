@@ -4,12 +4,12 @@
     <gazebo>
 
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/mp500lwa4d</robotNamespace>
+            <!--<robotNamespace>mp500lwa4d</robotNamespace>-->
             <robotBaseFrame>base_footprint</robotBaseFrame>
         </plugin>
 
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
-        <robotNamespace>/mp500lwa4d</robotNamespace>		  
+        <!--<robotNamespace>mp500lwa4d</robotNamespace>		  -->
         <alwaysOn>true</alwaysOn>
         <updateRate>50</updateRate>
         <leftJoint>wheel_left_joint</leftJoint>
@@ -17,7 +17,7 @@
         <wheelSeparation>0.51</wheelSeparation>
         <wheelDiameter>0.25</wheelDiameter>
         <torque>100</torque>
-        <commandTopic>/mobile_base_controller/cmd_vel</commandTopic>
+        <commandTopic>mobile_base_controller/cmd_vel</commandTopic>
         <odometryTopic>odom</odometryTopic>
         <odometryFrame>odom</odometryFrame>
         <robotBaseFrame>base_footprint</robotBaseFrame>    

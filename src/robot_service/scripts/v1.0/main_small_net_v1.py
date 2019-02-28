@@ -45,6 +45,26 @@ def train():
             else:
                 var = 0
 
+            # var = 0
+            # if i <= ALPHA + BELTA * 2 / 3:
+            #     if i <= ALPHA + BELTA / 3:
+            #         if i <= ALPHA:
+            #             var = VAR
+            #         else:
+            #             if i <= ALPHA + BELTA / 6:
+            #                 var = VAR/2
+            #             else:
+            #                 print(var)
+            #     else:
+            #         if i <= ALPHA + BELTA * 3 / 6:
+            #             var = VAR / 2
+            #         else:
+            #             print(var)
+            # else:
+            #     if i <= ALPHA + BELTA * 5 / 6:
+            #         var = VAR / 2
+            #     else:
+            #         print(var)
         else:
             if i <= LEARN_START / MAX_EP_STEPS:
                 var = VAR
@@ -54,7 +74,9 @@ def train():
         STU_FLAG = 0
         for j in range(MAX_EP_STEPS):
 
+            # env.render()                # 环境的渲染
             a = rl.choose_action(s)     # RL 选择动作
+            # a = np.clip(np.random.normal(a, var), -2, 2)
             a = np.clip(np.random.normal(a, var), -1, 1)
             if np.sum(np.absolute(a)) <= 0.0001:
                 STU_FLAG += 1
@@ -89,8 +111,6 @@ def train():
 
 def eval():
     rl.restore()
-    env.render()
-    env.viewer.set_vsync(True)
     i = 0.0
     j = 0
     T = 0.0
@@ -100,12 +120,10 @@ def eval():
         ep_r = 0.
         i += 1
         for j in range(300):
-            env.render()
             a = rl.choose_action(s)
-            # if sum(a) < 0.00001:
-            #     a = np.array([0., 0., 0., 0.])
-            a[0:3] = a[0:3] * np.pi / 6  # * 2
-            a[3] = a[3] * 20  # * 2
+            a = np.clip(np.random.normal(a, var), -1, 1)
+            a[2:8] = a[2:8] * np.pi/6
+            a[1] = a[1] * np.pi
             s, r, done, info = env.step(a)
             ep_r += r
             if done or j == 299:

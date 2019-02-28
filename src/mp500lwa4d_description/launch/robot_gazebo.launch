@@ -2,6 +2,7 @@
 <launch>
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
   <arg name="world_name" value="$(find mp500lwa4d_description)/worlds/training.world"/>
+  <!--<arg name="world_name" value="$(find mp500lwa4d_description)/worlds/orig.world"/>-->
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="gui" default="true"/>
@@ -23,20 +24,14 @@
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
   <param name="goal_description" command="$(find xacro)/xacro --inorder $(arg model_goal)"/>
   <!-- push robot_description to factory and spawn robot in gazebo -->
-  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model mp500lwa4d -z 0." respawn="false" output="screen" />
-  <node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -model goal -z 1." respawn="false" output="screen" />
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -robot_namespace /mp500lwa4d -model mp500lwa4d -z 0." respawn="false" output="screen" />
+  <node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -robot_namespace /mp500lwa4d -model goal -z 1." respawn="false" output="screen" />
 
-  <!-- Fake Calibration -->
-  <!--<node pkg="rostopic" type="rostopic" name="fake_joint_calibration"
-        args="pub /calibrated std_msgs/Bool true" />-->
   <!-- joint_state_controller -->
   <rosparam file="$(find mp500lwa4d_description)/controller/joint_state_controller.yaml" command="load"/>
-  <!--rosparam file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/-->
-  <!--rosparam file="$(find schunk_lwa4d)/config/arm_controller.yaml" command="load"/-->
   <rosparam file="$(find mp500lwa4d_description)/controller/arm_controller.yaml" command="load"/>
-  <!--rosparam file="$(find simple_robot_description)/controller/wheel_controller.yaml" command="load"/-->
   <rosparam file="$(find mp500lwa4d_description)/controller/mobile_base_controller.yaml" command="load"/>
-
+  <rosparam file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/>
   <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="mp500lwa4d" args="/mp500lwa4d/joint_state_controller /mp500lwa4d/mobile_base_controller 
                                                                                                 /mp500lwa4d/arm_1_joint_position_controller
                                                                                                 /mp500lwa4d/arm_2_joint_position_controller

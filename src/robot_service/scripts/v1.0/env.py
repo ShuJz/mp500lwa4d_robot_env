@@ -244,15 +244,15 @@ class mp500lwa4dEnv(object):
         self.robot_orientation[2]  =  self.resp_robot_state.pose.orientation.z
         self.robot_orientation[3]  =  self.resp_robot_state.pose.orientation.w
 
-        Loc_robot[0] = self.resp_robot_state.pose.position.x / (X_DOMAIN/2)
-        Loc_robot[1] = self.resp_robot_state.pose.position.y / (Y_DOMAIN/2)
-        if abs(Loc_robot[0]) <= 1: 
-            if abs(Loc_robot[1]) <= 1:
-                r_boundary = 0
-            else:
-                r_boundary = -1
-        else:
-            r_boundary = -1
+        # Loc_robot[0] = self.resp_robot_state.pose.position.x / (X_DOMAIN/2)
+        # Loc_robot[1] = self.resp_robot_state.pose.position.y / (Y_DOMAIN/2)
+        # if abs(Loc_robot[0]) <= 1: 
+        #     if abs(Loc_robot[1]) <= 1:
+        #         r_boundary = 0
+        #     else:
+        #         r_boundary = -1
+        # else:
+        #     r_boundary = -1
 
         self.arm1_pose = [self.resp_arm1_coordinates.link_state.pose.position.x, self.resp_arm1_coordinates.link_state.pose.position.y, self.resp_arm1_coordinates.link_state.pose.position.z]
         self.arm3_pose = [self.resp_arm3_coordinates.link_state.pose.position.x, self.resp_arm3_coordinates.link_state.pose.position.y, self.resp_arm3_coordinates.link_state.pose.position.z]
@@ -430,8 +430,8 @@ class mp500lwa4dEnv(object):
         self.robot_orientation[1]  =  self.resp_robot_state.pose.orientation.y
         self.robot_orientation[2]  =  self.resp_robot_state.pose.orientation.z
         self.robot_orientation[3]  =  self.resp_robot_state.pose.orientation.w
-        Loc_robot[0] = self.resp_robot_state.pose.position.x / (X_DOMAIN/2)
-        Loc_robot[1] = self.resp_robot_state.pose.position.y / (Y_DOMAIN/2)
+        # Loc_robot[0] = self.resp_robot_state.pose.position.x / (X_DOMAIN/2)
+        # Loc_robot[1] = self.resp_robot_state.pose.position.y / (Y_DOMAIN/2)
 
 
         self.arm1_pose = [self.resp_arm1_coordinates.link_state.pose.position.x, self.resp_arm1_coordinates.link_state.pose.position.y, self.resp_arm1_coordinates.link_state.pose.position.z]

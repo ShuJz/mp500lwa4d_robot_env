@@ -70,7 +70,7 @@ class mp500lwa4dEnv(object):
     action_base_bound = action_bound * 2.5
     goal = {'x': 2.15, 'y': 2.675, 'l': 0.2}  # 蓝色 goal 的 x,y 坐标和长度 l
     # goal = {'x': 215., 'y': 267.5, 'l': 20}
-    state_dim = 21  # 观测值
+    state_dim = 23  # 观测值
     action_dim = 9  # 动作
     s = np.zeros(state_dim)
     room_long = 2.5
@@ -261,57 +261,57 @@ class mp500lwa4dEnv(object):
 
         finger = self.arm7_pose
 #-------------- dist1 ------------------
-        dist1 = [(self.goal['x'] - self.arm1_pose[0])/ self.room_long, (self.goal['y'] - self.arm1_pose[1])/ self.room_width, (self.goal['z'] - self.arm1_pose[2]) / self.room_high]
-        # if abs(dist1[0]) <= ARM_X_DOMAIN:
-        #     dist1[0] = dist1[0] / ARM_X_DOMAIN
-        # else:
-        #     dist1[0] = ((abs(dist1[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist1[0] / abs(dist1[0]))
+        dist1 = [(self.goal['x'] - self.arm1_pose[0]), (self.goal['y'] - self.arm1_pose[1]), (self.goal['z'] - self.arm1_pose[2]) / self.room_high]
+        if abs(dist1[0]) <= ARM_X_DOMAIN:
+            dist1[0] = dist1[0] / ARM_X_DOMAIN
+        else:
+            dist1[0] = ((abs(dist1[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist1[0] / abs(dist1[0]))
 
-        # if abs(dist1[1]) <= ARM_Y_DOMAIN:
-        #     dist1[1] = dist1[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist1[1] = ((abs(dist1[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist1[1] / abs(dist1[1]))
+        if abs(dist1[1]) <= ARM_Y_DOMAIN:
+            dist1[1] = dist1[1] / ARM_Y_DOMAIN
+        else:
+            dist1[1] = ((abs(dist1[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist1[1] / abs(dist1[1]))
         dist1_ = np.sqrt(dist1[0] ** 2 + dist1[1] ** 2 + dist1[2] ** 2)
 #-------------- dist2 -------------------
-        dist2 = [(self.goal['x'] - self.arm3_pose[0])/ self.room_long, (self.goal['y'] - self.arm3_pose[1])/ self.room_width, (self.goal['z'] - self.arm3_pose[2]) / self.room_high]
-        # if abs(dist2[0]) <= ARM_X_DOMAIN:
-        #     dist2[0] = dist2[0] / ARM_X_DOMAIN
-        # else:
-        #     dist2[0] = ((abs(dist2[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist2[0] / abs(dist2[0]))
+        dist2 = [(self.goal['x'] - self.arm3_pose[0]), (self.goal['y'] - self.arm3_pose[1]), (self.goal['z'] - self.arm3_pose[2]) / self.room_high]
+        if abs(dist2[0]) <= ARM_X_DOMAIN:
+            dist2[0] = dist2[0] / ARM_X_DOMAIN
+        else:
+            dist2[0] = ((abs(dist2[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist2[0] / abs(dist2[0]))
 
-        # if abs(dist2[1]) <= ARM_Y_DOMAIN:
-        #     dist2[1] = dist2[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist2[1] = ((abs(dist2[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist2[1] / abs(dist2[1]))
+        if abs(dist2[1]) <= ARM_Y_DOMAIN:
+            dist2[1] = dist2[1] / ARM_Y_DOMAIN
+        else:
+            dist2[1] = ((abs(dist2[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist2[1] / abs(dist2[1]))
 #------------- dist3 ---------------------
-        dist3 = [(self.goal['x'] - self.arm5_pose[0])/ self.room_long, (self.goal['y'] - self.arm5_pose[1])/ self.room_width, (self.goal['z'] - self.arm5_pose[2]) / self.room_high]
-        # if abs(dist3[0]) <= ARM_X_DOMAIN:
-        #     dist3[0] = dist3[0] / ARM_X_DOMAIN
-        # else:
-        #     dist3[0] = ((abs(dist3[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist3[0] / abs(dist3[0]))
+        dist3 = [(self.goal['x'] - self.arm5_pose[0]), (self.goal['y'] - self.arm5_pose[1]), (self.goal['z'] - self.arm5_pose[2]) / self.room_high]
+        if abs(dist3[0]) <= ARM_X_DOMAIN:
+            dist3[0] = dist3[0] / ARM_X_DOMAIN
+        else:
+            dist3[0] = ((abs(dist3[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist3[0] / abs(dist3[0]))
 
-        # if abs(dist3[1]) <= ARM_Y_DOMAIN:
-        #     dist3[1] = dist3[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist3[1] = ((abs(dist3[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist3[1] / abs(dist3[1]))
+        if abs(dist3[1]) <= ARM_Y_DOMAIN:
+            dist3[1] = dist3[1] / ARM_Y_DOMAIN
+        else:
+            dist3[1] = ((abs(dist3[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist3[1] / abs(dist3[1]))
         dist3_ = np.sqrt(dist3[0] ** 2 + dist3[1] ** 2 + dist3[2] ** 2)
 #------------- dist4 ---------------------
-        dist4 = [(self.goal['x'] - finger[0])/ self.room_long, (self.goal['y'] - finger[1])/ self.room_width, (self.goal['z'] - finger[2]) / self.room_high]
-        # if abs(dist4[0]) <= ARM_X_DOMAIN:
-        #     dist4[0] = dist4[0] / ARM_X_DOMAIN
-        # else:
-        #     dist4[0] = ((abs(dist4[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist4[0] / abs(dist4[0]))
+        dist4 = [(self.goal['x'] - finger[0]), (self.goal['y'] - finger[1]), (self.goal['z'] - finger[2]) / self.room_high]
+        if abs(dist4[0]) <= ARM_X_DOMAIN:
+            dist4[0] = dist4[0] / ARM_X_DOMAIN
+        else:
+            dist4[0] = ((abs(dist4[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist4[0] / abs(dist4[0]))
 
-        # if abs(dist4[1]) <= ARM_Y_DOMAIN:
-        #     dist4[1] = dist4[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist4[1] = ((abs(dist4[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist4[1] / abs(dist4[1]))
+        if abs(dist4[1]) <= ARM_Y_DOMAIN:
+            dist4[1] = dist4[1] / ARM_Y_DOMAIN
+        else:
+            dist4[1] = ((abs(dist4[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist4[1] / abs(dist4[1]))
         dist = np.sqrt(dist4[0] ** 2 + dist4[1] ** 2 + dist4[2] ** 2)
         # Reward
-        r = (self.dist_ - dist) * 100
+        r = (self.dist_ - dist) /self.oridist * 200
         # print ('dist_ is: %.3f | dist is: %.3f | r is: %.3f' % (self.dist_, dist, r))
         r += r_angle
-        # r += r_boundary
+        r += r_boundary
         r -= 1 / MAX_EP_STEPS * 100
 
         self.dist_ = dist
@@ -348,7 +348,7 @@ class mp500lwa4dEnv(object):
 
 
         # state
-        observation = np.concatenate((self.arm_joint_positions, self.robot_orientation, dist1, dist3, dist4, [1. if self.on_goal else 0.]))
+        observation = np.concatenate((self.arm_joint_positions, self.robot_orientation, Loc_robot, dist1, dist3, dist4, [1. if self.on_goal else 0.]))
         return observation, r, done, info
 
         # raise NotImplementedError
@@ -441,57 +441,58 @@ class mp500lwa4dEnv(object):
 
         finger = self.arm7_pose
 #-------------- dist1 ------------------
-        dist1 = [(self.goal['x'] - self.arm1_pose[0])/ self.room_long, (self.goal['y'] - self.arm1_pose[1])/ self.room_width, (self.goal['z'] - self.arm1_pose[2]) / self.room_high]
-        # if abs(dist1[0]) <= ARM_X_DOMAIN:
-        #     dist1[0] = dist1[0] / ARM_X_DOMAIN
-        # else:
-        #     dist1[0] = ((abs(dist1[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist1[0] / abs(dist1[0]))
+        dist1 = [(self.goal['x'] - self.arm1_pose[0]), (self.goal['y'] - self.arm1_pose[1]), (self.goal['z'] - self.arm1_pose[2]) / self.room_high]
+        if abs(dist1[0]) <= ARM_X_DOMAIN:
+            dist1[0] = dist1[0] / ARM_X_DOMAIN
+        else:
+            dist1[0] = ((abs(dist1[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist1[0] / abs(dist1[0]))
 
-        # if abs(dist1[1]) <= ARM_Y_DOMAIN:
-        #     dist1[1] = dist1[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist1[1] = ((abs(dist1[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist1[1] / abs(dist1[1]))
+        if abs(dist1[1]) <= ARM_Y_DOMAIN:
+            dist1[1] = dist1[1] / ARM_Y_DOMAIN
+        else:
+            dist1[1] = ((abs(dist1[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist1[1] / abs(dist1[1]))
         dist1_ = np.sqrt(dist1[0] ** 2 + dist1[1] ** 2 + dist1[2] ** 2)
 #-------------- dist2 -------------------
-        dist2 = [(self.goal['x'] - self.arm3_pose[0])/ self.room_long, (self.goal['y'] - self.arm3_pose[1])/ self.room_width, (self.goal['z'] - self.arm3_pose[2]) / self.room_high]
-        # if abs(dist2[0]) <= ARM_X_DOMAIN:
-        #     dist2[0] = dist2[0] / ARM_X_DOMAIN
-        # else:
-        #     dist2[0] = ((abs(dist2[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist2[0] / abs(dist2[0]))
+        dist2 = [(self.goal['x'] - self.arm3_pose[0]), (self.goal['y'] - self.arm3_pose[1]), (self.goal['z'] - self.arm3_pose[2]) / self.room_high]
+        if abs(dist2[0]) <= ARM_X_DOMAIN:
+            dist2[0] = dist2[0] / ARM_X_DOMAIN
+        else:
+            dist2[0] = ((abs(dist2[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist2[0] / abs(dist2[0]))
 
-        # if abs(dist2[1]) <= ARM_Y_DOMAIN:
-        #     dist2[1] = dist2[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist2[1] = ((abs(dist2[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist2[1] / abs(dist2[1]))
+        if abs(dist2[1]) <= ARM_Y_DOMAIN:
+            dist2[1] = dist2[1] / ARM_Y_DOMAIN
+        else:
+            dist2[1] = ((abs(dist2[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist2[1] / abs(dist2[1]))
 #------------- dist3 ---------------------
-        dist3 = [(self.goal['x'] - self.arm5_pose[0])/ self.room_long, (self.goal['y'] - self.arm5_pose[1])/ self.room_width, (self.goal['z'] - self.arm5_pose[2]) / self.room_high]
-        # if abs(dist3[0]) <= ARM_X_DOMAIN:
-        #     dist3[0] = dist3[0] / ARM_X_DOMAIN
-        # else:
-        #     dist3[0] = ((abs(dist3[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist3[0] / abs(dist3[0]))
+        dist3 = [(self.goal['x'] - self.arm5_pose[0]), (self.goal['y'] - self.arm5_pose[1]), (self.goal['z'] - self.arm5_pose[2]) / self.room_high]
+        if abs(dist3[0]) <= ARM_X_DOMAIN:
+            dist3[0] = dist3[0] / ARM_X_DOMAIN
+        else:
+            dist3[0] = ((abs(dist3[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist3[0] / abs(dist3[0]))
 
-        # if abs(dist3[1]) <= ARM_Y_DOMAIN:
-        #     dist3[1] = dist3[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist3[1] = ((abs(dist3[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist3[1] / abs(dist3[1]))
+        if abs(dist3[1]) <= ARM_Y_DOMAIN:
+            dist3[1] = dist3[1] / ARM_Y_DOMAIN
+        else:
+            dist3[1] = ((abs(dist3[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist3[1] / abs(dist3[1]))
         dist3_ = np.sqrt(dist3[0] ** 2 + dist3[1] ** 2 + dist3[2] ** 2)
 #------------- dist4 ---------------------
-        dist4 = [(self.goal['x'] - finger[0])/ self.room_long, (self.goal['y'] - finger[1])/ self.room_width, (self.goal['z'] - finger[2]) / self.room_high]
-        # if abs(dist4[0]) <= ARM_X_DOMAIN:
-        #     dist4[0] = dist4[0] / ARM_X_DOMAIN
-        # else:
-        #     dist4[0] = ((abs(dist4[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist4[0] / abs(dist4[0]))
+        dist4 = [(self.goal['x'] - finger[0]), (self.goal['y'] - finger[1]), (self.goal['z'] - finger[2]) / self.room_high]
+        if abs(dist4[0]) <= ARM_X_DOMAIN:
+            dist4[0] = dist4[0] / ARM_X_DOMAIN
+        else:
+            dist4[0] = ((abs(dist4[0]) - ARM_X_DOMAIN) / (self.room_long - ARM_X_DOMAIN) + 1) * (dist4[0] / abs(dist4[0]))
 
-        # if abs(dist4[1]) <= ARM_Y_DOMAIN:
-        #     dist4[1] = dist4[1] / ARM_Y_DOMAIN
-        # else:
-        #     dist4[1] = ((abs(dist4[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist4[1] / abs(dist4[1]))
+        if abs(dist4[1]) <= ARM_Y_DOMAIN:
+            dist4[1] = dist4[1] / ARM_Y_DOMAIN
+        else:
+            dist4[1] = ((abs(dist4[1]) - ARM_Y_DOMAIN) / (self.room_width - ARM_Y_DOMAIN) + 1) * (dist4[1] / abs(dist4[1])) 
         dist = np.sqrt(dist4[0] ** 2 + dist4[1] ** 2 + dist4[2] ** 2)
         # Reward
         # r = (self.dist_ - dist) * 10
         # r += r_angle
         # r -= 1 / MAX_EP_STEPS * 10
 
+        self.oridist = dist
         self.dist_ = dist
 
         # if dist3_ >= dist:
@@ -526,7 +527,7 @@ class mp500lwa4dEnv(object):
 
 
         # state
-        observation = np.concatenate((self.arm_joint_positions, self.robot_orientation, dist1, dist3, dist4, [1. if self.on_goal else 0.]))
+        observation = np.concatenate((self.arm_joint_positions, self.robot_orientation, Loc_robot, dist1, dist3, dist4, [1. if self.on_goal else 0.]))
         return observation
         # raise NotImplementedError
 

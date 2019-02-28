@@ -1,0 +1,52 @@
+worker1:
+  mp500lwa4d/mobile_base_controller:
+    type: "diff_drive_controller/DiffDriveController"
+    publish_rate: 50
+    controller_frequency: 50.0
+    controller_patience: 3.0
+
+    left_wheel: ['wheel_left_joint']
+    right_wheel: ['wheel_right_joint']
+
+    # Odometry covariances for the encoder output of the robot. These values should
+    # be tuned to your robot's sample odometry data, but these values are a good place
+    # to start
+    pose_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
+    twist_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
+
+    # Wheel separation and radius multipliers
+    wheel_separation: 0.51
+    wheel_radius: 0.125
+    wheel_separation_multiplier: 1.0 # default: 1.0
+    wheel_radius_multiplier: 1.0 # default: 1.0
+
+    # Velocity commands timeout [s], default 0.5
+    #cmd_vel_timeout: 0.5
+    # Top level frame (link) of the robot description
+    base_frame_id: base_footprint
+    #odom_frame_id: odom
+    #publish_cmd: False
+    enable_odom_tf: true
+
+    # Velocity and acceleration limits for the robot
+    # default min = -max
+    linear:
+      x:
+        has_velocity_limits: true
+        max_velocity: 5  # m/s
+        min_velocity: -5 # m/s
+        has_acceleration_limits: true
+        max_acceleration: 10  # m/s^2
+        min_acceleration: -10 # m/s^2
+        #has_jerk_limits: true
+        #max_jerk: 5  # m/s^3
+    angular:
+      z:
+        has_velocity_limits: true
+        max_velocity: 2  # rad/s
+        min_velocity: -2
+        has_acceleration_limits: true
+        max_acceleration: 10  # rad/s^2
+        min_acceleration: -10
+      #has_jerk_limits: true
+      #max_jerk: 5  # rad/s^3
