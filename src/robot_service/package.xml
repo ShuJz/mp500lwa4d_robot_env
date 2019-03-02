@@ -55,6 +55,7 @@
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>message_generation</build_export_depend>
   <build_depend>pluginlib</build_depend>
   <build_depend>eigen</build_depend>
   <build_depend>moveit_core</build_depend>

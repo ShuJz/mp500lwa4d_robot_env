@@ -43,7 +43,7 @@
     
     <node name="gazebo" pkg="gazebo_ros" type="$(arg script_type)" respawn="$(arg respawn_gazebo)" args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) -e $(arg physics) $(arg extra_gazebo_args) $(arg world_name)" />
     
-    <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen" args="$(arg command_arg3)"/>
+    <!--<node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen" args="$(arg command_arg3)"/>-->
     
     <!-- send robot urdf to param server -->
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
@@ -99,6 +99,7 @@
     
     <node name="gazebo" pkg="gazebo_ros" type="$(arg script_type)" respawn="$(arg respawn_gazebo)" args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) -e $(arg physics) $(arg extra_gazebo_args) $(arg world_name)" />
     
+    <!-- open Gazebo GUI -->
     <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen" args="$(arg command_arg3)"/>
     
     <!-- send robot urdf to param server -->
@@ -140,10 +141,10 @@
     </node>
     <remap from="/joint_states" to="/worker2/mp500lwa4d/joint_states" />
     
-    <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+    <!--<node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
       <param name="default_topic" value="/worker2/mp500lwa4d/mobile_base_controller/cmd_vel"/>
       <remap from="/cmd_vel" to="/worker2/mp500lwa4d/mobile_base_controller/cmd_vel" />
-    </node>
+    </node>-->
     
   </group>
 </launch>

@@ -5,7 +5,9 @@ file(REMOVE_RECURSE
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Twist.js"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Point.js"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Pose.js"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/RLMemoryStore.js"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Quaternion.js"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/RLChooseAction.js"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js"
 )
 

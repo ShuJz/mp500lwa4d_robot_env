@@ -102,7 +102,7 @@ class mp500lwa4dEnv(object):
         # self.arm.set_joint_value_target([0, 0, 0, 0, 0, 0, 0])
         # self.arm.go()
 
-        rospy.sleep(10)
+        time.sleep(10)
     
         # init robot model state
         self.model_state_robot = ModelState()
@@ -141,7 +141,7 @@ class mp500lwa4dEnv(object):
         self.pub_arm5.publish(self.arm_joint_positions[4])
         self.pub_arm6.publish(self.arm_joint_positions[5])
         self.pub_arm7.publish(self.arm_joint_positions[6])
-        rospy.sleep(5)
+        time.sleep(5)
 
   
         
@@ -217,25 +217,25 @@ class mp500lwa4dEnv(object):
         self.pub_arm5.publish(self.arm_joint_positions[4])
         self.pub_arm6.publish(self.arm_joint_positions[5])
         self.pub_arm7.publish(self.arm_joint_positions[6])
-        rospy.sleep(2)
+        time.sleep(2)
  
         # publish base velocity
         self.base_vel.linear.x = 0
         self.base_vel.angular.z = action[1]
-        t_1 = rospy.get_time()
-        t_2 = rospy.get_time()
+        t_1 = time.clock()
+        t_2 = time.clock()
         while t_2 - t_1 <= dt and not rospy.is_shutdown():
             self.pub_mobile.publish(self.base_vel) 
-            t_2 = rospy.get_time()
+            t_2 = time.clock()
 
         self.base_vel.linear.x = action[0]
         self.base_vel.angular.z = 0
-        t_1 = rospy.get_time()
-        t_2 = rospy.get_time()
+        t_1 = time.clock()
+        t_2 = time.clock()
         while t_2 - t_1 <= dt and not rospy.is_shutdown():
             self.pub_mobile.publish(self.base_vel) 
-            t_2 = rospy.get_time()
-        rospy.sleep(1)
+            t_2 = time.clock()
+        time.sleep(1)
         
         # get model state
         self.resp_robot_state, self.resp_arm1_coordinates,  self.resp_arm3_coordinates,  self.resp_arm5_coordinates,  self.resp_arm7_coordinates = self.read_model_state()
@@ -423,7 +423,7 @@ class mp500lwa4dEnv(object):
         self.model_state_goal.pose.position.z = self.goal['z']
         self.model_state_goal.reference_frame = 'world'
         self.pub_model_state.publish(self.model_state_goal)
-        rospy.sleep(10)
+        time.sleep(10)
         
         self.resp_robot_state, self.resp_arm1_coordinates,  self.resp_arm3_coordinates,  self.resp_arm5_coordinates,  self.resp_arm7_coordinates = self.read_model_state()
         self.robot_orientation[0]  =  self.resp_robot_state.pose.orientation.x

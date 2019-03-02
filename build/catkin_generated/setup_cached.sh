@@ -7,5 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/bin:/opt/ros/kinetic/bin:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/venv/bin:/home/jingzhe/bin:/home/jingzhe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export PATH="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/bin:/home/jingzhe/catkin_ws/devel/bin:/opt/ros/kinetic/bin:/home/jingzhe/.conda/envs/mp500lwa4d_gym/bin:/home/jingzhe/bin:/home/jingzhe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 export PWD="/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build"

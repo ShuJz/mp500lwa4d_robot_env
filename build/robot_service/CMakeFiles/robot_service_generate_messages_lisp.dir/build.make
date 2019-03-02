@@ -58,7 +58,9 @@ robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/Wor
 robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Twist.lisp
 robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Point.lisp
 robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Pose.lisp
+robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/RLMemoryStore.lisp
 robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Quaternion.lisp
+robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/RLChooseAction.lisp
 robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp
 
 
@@ -100,10 +102,20 @@ robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/Wor
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from robot_service/Pose.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Pose.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg
 
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/RLMemoryStore.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/RLMemoryStore.lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from robot_service/RLMemoryStore.msg"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg
+
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Quaternion.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Quaternion.lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from robot_service/Quaternion.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from robot_service/Quaternion.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg
+
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/RLChooseAction.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/RLChooseAction.lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from robot_service/RLChooseAction.srv"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv
 
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv
@@ -113,7 +125,7 @@ robot_service/CMakeFiles/robot_service_generate_messages_lisp: /home/jingzhe/Wor
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from robot_service/GetModelState.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from robot_service/GetModelState.srv"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv
 
 robot_service_generate_messages_lisp: robot_service/CMakeFiles/robot_service_generate_messages_lisp
@@ -122,7 +134,9 @@ robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_rob
 robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Twist.lisp
 robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Point.lisp
 robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Pose.lisp
+robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/RLMemoryStore.lisp
 robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Quaternion.lisp
+robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/RLChooseAction.lisp
 robot_service_generate_messages_lisp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp
 robot_service_generate_messages_lisp: robot_service/CMakeFiles/robot_service_generate_messages_lisp.dir/build.make
 

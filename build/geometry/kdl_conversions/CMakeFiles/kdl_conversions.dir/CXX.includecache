@@ -23,6 +23,8 @@ geometry_msgs/Vector3.h
 -
 geometry_msgs/Wrench.h
 -
+ros/macros.h
+-
 
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/geometry/kdl_conversions/src/kdl_msg.cpp
 kdl_conversions/kdl_msg.h

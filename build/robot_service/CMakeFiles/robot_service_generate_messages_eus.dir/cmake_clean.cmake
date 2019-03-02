@@ -5,7 +5,9 @@ file(REMOVE_RECURSE
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Twist.l"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Point.l"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Pose.l"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/RLMemoryStore.l"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Quaternion.l"
+  "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/RLChooseAction.l"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l"
   "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/manifest.l"
 )

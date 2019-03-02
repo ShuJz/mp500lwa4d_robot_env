@@ -58,7 +58,9 @@ robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/Work
 robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Twist.l
 robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Point.l
 robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Pose.l
+robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/RLMemoryStore.l
 robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Quaternion.l
+robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/RLChooseAction.l
 robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l
 robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/manifest.l
 
@@ -101,10 +103,20 @@ robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/Work
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from robot_service/Pose.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Pose.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg
 
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/RLMemoryStore.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/RLMemoryStore.l: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from robot_service/RLMemoryStore.msg"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg
+
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Quaternion.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Quaternion.l: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from robot_service/Quaternion.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from robot_service/Quaternion.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg
+
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/RLChooseAction.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/RLChooseAction.l: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from robot_service/RLChooseAction.srv"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv
 
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv
@@ -114,11 +126,11 @@ robot_service/CMakeFiles/robot_service_generate_messages_eus: /home/jingzhe/Work
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from robot_service/GetModelState.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from robot_service/GetModelState.srv"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv
 
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp manifest code for robot_service"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp manifest code for robot_service"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service robot_service std_msgs geometry_msgs
 
 robot_service_generate_messages_eus: robot_service/CMakeFiles/robot_service_generate_messages_eus
@@ -127,7 +139,9 @@ robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robo
 robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Twist.l
 robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Point.l
 robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Pose.l
+robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/RLMemoryStore.l
 robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Quaternion.l
+robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/RLChooseAction.l
 robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l
 robot_service_generate_messages_eus: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/manifest.l
 robot_service_generate_messages_eus: robot_service/CMakeFiles/robot_service_generate_messages_eus.dir/build.make

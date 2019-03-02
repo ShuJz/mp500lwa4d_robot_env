@@ -6,6 +6,8 @@ d718eb93b4fd703e63400934335551f3 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_en
 6746808a5a13289b69f40636caaa2bb3 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Point.h
 c37cd083d7ae54f7a459c92a84e43aa8 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Pose.h
 db9019c40e024dc286d68502d44c032a /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Quaternion.h
+878c08d24842efe4b972292b0148fa3c /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLChooseAction.h
+b951cead52df8ac78880281ed13a5d74 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLMemoryStore.h
 6557f3341aeb0f250790b4ca778dec20 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Twist.h
 3075f59ab321bf16c06c3124b82692f5 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/tf/FrameGraph.h
 090999c2f8267d4378c4784da357c75f /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/tf/tfMessage.h
@@ -24,9 +26,11 @@ ee52bd4cf8445f1a6d6287fc6b008923 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_en
 93ecae34196e635246085343ad669667 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/msg/_Point.py
 dc70a9abd5da49855d852c4d925f1ec2 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/msg/_Pose.py
 52e13a68256cd459f3e076d4e7bce2d8 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/msg/_Quaternion.py
+54e22ef8535aa542ba76fa1b1cc0c3b5 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/msg/_RLMemoryStore.py
 75860208372f33c4f6a7a64f6f605e0b /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/msg/_Twist.py
 c175792950480193403c855dcf29910c /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/msg/__init__.py
 8256c3c8c81cacadc8990cb4b05baab9 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/srv/_GetModelState.py
+53cacee42006e6df8ab30db62e9c10c6 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/srv/_RLChooseAction.py
 006684d63b5a500db9c540ce3ba346b5 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/robot_service/srv/__init__.py
 96892208ace2b1d2b8402fb94d7efa15 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/tf/msg/__init__.py
 814fc4580fa4cd7fa5a11883850fc8ea /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/lib/python2.7/dist-packages/tf/msg/_tfMessage.py
@@ -49,8 +53,10 @@ e9ae10be68a80b2552e0599b84319ce1 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_en
 f7ba6eb1e60c2b6afd872ed89bd15744 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Point.lisp
 4321f2c0088dfbd9cc4a73d8c0903a7f /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Pose.lisp
 564e7c55a0f0b7dba665a1ae6e2d89a6 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Quaternion.lisp
+6f0a5cf4c49a79c0936d13cc3554884e /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/RLMemoryStore.lisp
 40ab53476fac12f692620173b53c6255 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/msg/Twist.lisp
 78ef9916026b1fa16cb3054792aab3ac /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/GetModelState.lisp
+cbd230634a9863b527fb741af3e984f9 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/robot_service/srv/RLChooseAction.lisp
 8a4c8a7e20d6c4627e0a2193d99f5f2d /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/tf/msg/tfMessage.lisp
 a63fb31646b2bf9299afb1b202c088d0 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/tf/srv/FrameGraph.lisp
 e4e7516a4088dc83bb8b4ce6fc2a5224 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/common-lisp/ros/tf2_msgs/msg/LookupTransformAction.lisp
@@ -68,8 +74,10 @@ a11a4136df228dc2c139cec29c02757c /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_en
 39b3704053166162baa9d6ea9498cbc5 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Point.js
 da037fb8d00217fdb7e3b34b1ed0c2ff /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Pose.js
 788911b169c4706eca91a4ae598f3f89 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Quaternion.js
+c893850a86985fd62889a29a29c53538 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/RLMemoryStore.js
 94abed77fbdd0aca3479cc386fb3a3c2 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Twist.js
 e0107eec155e7dce622f0a5fa8ea367c /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js
+9e0efcdefc2712aa39ce98e536666c74 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/RLChooseAction.js
 07986d43e86a42d063997725ca295465 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/tf/msg/tfMessage.js
 467897c84050d5cf587c8a8d1fd3ccf0 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/tf/srv/FrameGraph.js
 24801c9e6ebf49be0a7bda10dbbf80b3 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/tf2_msgs/msg/LookupTransformAction.js
@@ -88,8 +96,10 @@ cd53af7f23547700469bad2d5374fd9b /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_en
 64d7e14b75ff81673eb53566050b05be /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Point.l
 402639e4ed86cc509974c26003bd7b69 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Pose.l
 6ba8167239171234cd259b56d3f6942e /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Quaternion.l
+caac3602cf2978317259cc1b4e917c60 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/RLMemoryStore.l
 54732bc7f90b58d80a25549f1b7f87b2 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/msg/Twist.l
 79f94e868551bd25e4190e2e30442d11 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/GetModelState.l
+4e7b2c722353271a597ad52384a4b90b /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/robot_service/srv/RLChooseAction.l
 0db2d5c4b9c4a4f5728f0023985f435f /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/tf/manifest.l
 5335fb6291596878d1ad0037e6294c1d /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/tf/msg/tfMessage.l
 f371d39dc7c8ddae3f5ddcc3b3eb60bf /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/roseus/ros/tf/srv/FrameGraph.l
@@ -290,6 +300,8 @@ ed2546281b78561f5a657e58d62ab4fb robot_service/CMakeFiles/_robot_service_generat
 e0caea20c3271da49e5d35a2cc531928 robot_service/CMakeFiles/_robot_service_generate_messages_check_deps_Point
 d691b979d8be80d6f93894e3faebe187 robot_service/CMakeFiles/_robot_service_generate_messages_check_deps_Pose
 b43d520ba0bbceb31164e8e83e0d2ab1 robot_service/CMakeFiles/_robot_service_generate_messages_check_deps_Quaternion
+26f422781abdc2db0c401227770fba37 robot_service/CMakeFiles/_robot_service_generate_messages_check_deps_RLChooseAction
+c765168cd871fd8ed71a54aed7d6e387 robot_service/CMakeFiles/_robot_service_generate_messages_check_deps_RLMemoryStore
 68e3a30d79c025b3f953da7e4590c4cb robot_service/CMakeFiles/_robot_service_generate_messages_check_deps_Twist
 c5e87c69925c1ef80fffe30fb921060a robot_service/CMakeFiles/robot_service_generate_messages_cpp
 c5e87c69925c1ef80fffe30fb921060a robot_service/CMakeFiles/robot_service_generate_messages_eus

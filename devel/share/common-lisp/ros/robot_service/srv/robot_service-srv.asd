@@ -8,4 +8,6 @@
   :components ((:file "_package")
     (:file "GetModelState" :depends-on ("_package_GetModelState"))
     (:file "_package_GetModelState" :depends-on ("_package"))
+    (:file "RLChooseAction" :depends-on ("_package_RLChooseAction"))
+    (:file "_package_RLChooseAction" :depends-on ("_package"))
   ))

@@ -58,7 +58,9 @@ robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/W
 robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Twist.js
 robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Point.js
 robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Pose.js
+robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/RLMemoryStore.js
 robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Quaternion.js
+robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/RLChooseAction.js
 robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js
 
 
@@ -100,10 +102,20 @@ robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/W
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from robot_service/Pose.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Pose.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg
 
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/RLMemoryStore.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/RLMemoryStore.js: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from robot_service/RLMemoryStore.msg"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg
+
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Quaternion.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Quaternion.js: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from robot_service/Quaternion.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from robot_service/Quaternion.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg
+
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/RLChooseAction.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/RLChooseAction.js: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from robot_service/RLChooseAction.srv"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv
 
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv
@@ -113,7 +125,7 @@ robot_service/CMakeFiles/robot_service_generate_messages_nodejs: /home/jingzhe/W
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from robot_service/GetModelState.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from robot_service/GetModelState.srv"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/robot_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv
 
 robot_service_generate_messages_nodejs: robot_service/CMakeFiles/robot_service_generate_messages_nodejs
@@ -122,7 +134,9 @@ robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_r
 robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Twist.js
 robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Point.js
 robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Pose.js
+robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/RLMemoryStore.js
 robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/msg/Quaternion.js
+robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/RLChooseAction.js
 robot_service_generate_messages_nodejs: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/share/gennodejs/ros/robot_service/srv/GetModelState.js
 robot_service_generate_messages_nodejs: robot_service/CMakeFiles/robot_service_generate_messages_nodejs.dir/build.make
 

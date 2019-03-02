@@ -59,6 +59,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
+  RLMemoryStore.msg
   Twist.msg
   Point.msg
   ModelStates.msg
@@ -71,6 +72,7 @@ add_message_files(
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
+  RLChooseAction.srv
   GetModelState.srv
    
 )

@@ -34,6 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_service/msg" TYPE FILE FILES
+    "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg"
     "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Twist.msg"
     "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Point.msg"
     "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/ModelStates.msg"
@@ -44,7 +45,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_service/srv" TYPE FILE FILES "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_service/srv" TYPE FILE FILES
+    "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv"
+    "/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

@@ -17,6 +17,8 @@
     (:file "_package_Pose" :depends-on ("_package"))
     (:file "Quaternion" :depends-on ("_package_Quaternion"))
     (:file "_package_Quaternion" :depends-on ("_package"))
+    (:file "RLMemoryStore" :depends-on ("_package_RLMemoryStore"))
+    (:file "_package_RLMemoryStore" :depends-on ("_package"))
     (:file "Twist" :depends-on ("_package_Twist"))
     (:file "_package_Twist" :depends-on ("_package"))
     (:file "Vector3" :depends-on ("_package_Vector3"))

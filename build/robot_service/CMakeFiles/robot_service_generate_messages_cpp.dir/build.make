@@ -58,7 +58,9 @@ robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/Work
 robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Twist.h
 robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Point.h
 robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Pose.h
+robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLMemoryStore.h
 robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Quaternion.h
+robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLChooseAction.h
 robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/GetModelState.h
 
 
@@ -105,11 +107,24 @@ robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/Work
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from robot_service/Pose.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service && /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Pose.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service -e /opt/ros/kinetic/share/gencpp/cmake/..
 
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLMemoryStore.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLMemoryStore.h: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLMemoryStore.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from robot_service/RLMemoryStore.msg"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service && /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/RLMemoryStore.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service -e /opt/ros/kinetic/share/gencpp/cmake/..
+
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Quaternion.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Quaternion.h: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Quaternion.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from robot_service/Quaternion.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from robot_service/Quaternion.msg"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service && /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg/Quaternion.msg -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLChooseAction.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLChooseAction.h: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLChooseAction.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLChooseAction.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from robot_service/RLChooseAction.srv"
+	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service && /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/RLChooseAction.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/GetModelState.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/GetModelState.h: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv
@@ -121,7 +136,7 @@ robot_service/CMakeFiles/robot_service_generate_messages_cpp: /home/jingzhe/Work
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/GetModelState.h: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/GetModelState.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/GetModelState.h: /opt/ros/kinetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from robot_service/GetModelState.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from robot_service/GetModelState.srv"
 	cd /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service && /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/srv/GetModelState.srv -Irobot_service:/home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/src/robot_service/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p robot_service -o /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 robot_service_generate_messages_cpp: robot_service/CMakeFiles/robot_service_generate_messages_cpp
@@ -130,7 +145,9 @@ robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robo
 robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Twist.h
 robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Point.h
 robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Pose.h
+robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLMemoryStore.h
 robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/Quaternion.h
+robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/RLChooseAction.h
 robot_service_generate_messages_cpp: /home/jingzhe/WorkSpace/ROS/mp500lwa4d_robot_env/devel/include/robot_service/GetModelState.h
 robot_service_generate_messages_cpp: robot_service/CMakeFiles/robot_service_generate_messages_cpp.dir/build.make
 

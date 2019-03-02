@@ -13,6 +13,8 @@
    "POSE"
    "<QUATERNION>"
    "QUATERNION"
+   "<RLMEMORYSTORE>"
+   "RLMEMORYSTORE"
    "<TWIST>"
    "TWIST"
    "<VECTOR3>"

@@ -58,6 +58,7 @@ def train_loop(seed_set, name, queue_action_req, queue_action_get, queue_state):
     from env_distri import mp500lwa4dEnv
     env = mp500lwa4dEnv(seed_set, name)
 
+    time_test1=time.clock()
     for i in range(MAX_EPISODES):
 
         s = env.reset()                # 初始化回合设置
@@ -95,7 +96,12 @@ def train_loop(seed_set, name, queue_action_req, queue_action_get, queue_state):
             if done or j == MAX_EP_STEPS - 1:
                 print('Ep: %i | %s | ep_r1: %.1f | steps: %i' % (i, '---' if not done else 'done', ep_r, j))
                 break
+            if j == 10:
+                time_test2 = time.clock()
+                print('used time: %.4f' %(time_test2 - time_test1))
 
+        
+        
         # if i == 5999 or i == 7999:
         #     rl.save()
     # rl.save()
