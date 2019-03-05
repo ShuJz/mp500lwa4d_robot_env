@@ -332,7 +332,7 @@ class mp500lwa4dEnv(object):
 
                     # r = (self.dist_ - dist) * 10
                     self.on_goal += 1
-                    if self.on_goal > 10:
+                    if self.on_goal > 5:
                         done = True
                         r += 50 * self.on_goal
 

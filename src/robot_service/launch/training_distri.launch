@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
     <!-- start Agent -->
-    <node pkg="robot_service" type="RLAgent.py" name="" />
+    <node pkg="robot_service" type="RLAgent.py" name="" ns="/worker1" />
     <!-- start training -->
-    <node pkg="robot_service" type="main_distri_modi.py" name="" />
+    <node pkg="robot_service" type="main_distri_modi.py" name="" ns="/worker1" />
 </launch>

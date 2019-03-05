@@ -139,11 +139,11 @@ class DDPG(object):
 
     def save(self):
         saver = tf.train.Saver()
-        saver.save(self.sess, './params', write_meta_graph=False)
+        saver.save(self.sess, '/home/jingzhe/RL_Gazebo_Agent/params', write_meta_graph=False)
 
     def restore(self):
         saver = tf.train.Saver()
-        saver.restore(self.sess, './params')
+        saver.restore(self.sess, '/home/jingzhe/RL_Gazebo_Agent/params')
 
 
 def get_perturbed_actor_updates(a_params, perturbed_actor, param_noise_stddev):

@@ -7,10 +7,10 @@ import numpy as np
 import time
 
 # 设置全局变量
-MAX_EPISODES = 2000
+MAX_EPISODES = 4000
 MAX_EP_STEPS = 50
 ON_TRAIN = True  # True or False
-LEARN_START = 2500
+LEARN_START = 25000
 ALPHA = LEARN_START / MAX_EP_STEPS
 BELTA = MAX_EPISODES - LEARN_START / MAX_EP_STEPS
 VAR = 4  # control exploration

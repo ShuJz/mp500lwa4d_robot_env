@@ -17,7 +17,7 @@
           <mu2>100.5</mu2>
           <kp>1000000.0</kp>
           <kd>100.0</kd>
-          <fdir1>0 0 1</fdir1>
+          <fdir1>0 0 2</fdir1>
           <material value="Gazebo/Grey"/>
       </gazebo>
       <!-- Right Wheel -->
@@ -27,18 +27,18 @@
           <mu2>100.5</mu2>
           <kp>1000000.0</kp>
           <kd>100.0</kd>
-          <fdir1>0 0 1</fdir1>
+          <fdir1>0 0 2</fdir1>
           <material value="Gazebo/Grey"/>
       </gazebo>
       
       <!-- Castor -->
       <gazebo reference="hanger">
           <gravity>true</gravity>
-          <mu1>0.1</mu1>
-          <mu2>0.1</mu2>
+          <mu1>100.5</mu1>
+          <mu2>100.5</mu2>
           <kp>1000000.0</kp>
           <kd>100.0</kd>
-          <fdir1>0 0 1</fdir1>
+          <fdir1>0 0 2</fdir1>
           <material value="Gazebo/Grey"/>
       </gazebo>
 
