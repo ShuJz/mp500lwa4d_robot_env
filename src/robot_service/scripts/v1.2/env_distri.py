@@ -364,43 +364,43 @@ class mp500lwa4dEnv(object):
             space.
         """
         Loc_robot = [0, 0] #distance to boundery
-        # if self.loop < 18:
-        #     if self.loop < 6:
-        #         self.goal['x'] = self.loc[0]
-        #         self.goal['y'] = self.loc[self.loop % 3]
-        #         if self.loop < 3:
-        #             self.goal['z'] = self.loc[1]
-        #         else:
-        #             self.goal['z'] = self.loc[2]
-        #     elif self.loop >= 12:
-        #         self.goal['x'] = self.loc[2]
-        #         self.goal['y'] = self.loc[self.loop % 3]
-        #         if self.loop < 15:
-        #             self.goal['z'] = self.loc[1]
-        #         else:
-        #             self.goal['z'] = self.loc[2]
-        #     else:
-        #         self.goal['x'] = self.loc[1]
-        #         self.goal['y'] = self.loc[self.loop % 3]
-        #         if self.loop < 9:
-        #             self.goal['z'] = self.loc[1]
-        #         else:
-        #             self.goal['z'] = self.loc[2]
+        if self.loop < 18:
+            if self.loop < 6:
+                self.goal['x'] = self.loc[0]
+                self.goal['y'] = self.loc[self.loop % 3]
+                if self.loop < 3:
+                    self.goal['z'] = self.loc[1]
+                else:
+                    self.goal['z'] = self.loc[2]
+            elif self.loop >= 12:
+                self.goal['x'] = self.loc[2]
+                self.goal['y'] = self.loc[self.loop % 3]
+                if self.loop < 15:
+                    self.goal['z'] = self.loc[1]
+                else:
+                    self.goal['z'] = self.loc[2]
+            else:
+                self.goal['x'] = self.loc[1]
+                self.goal['y'] = self.loc[self.loop % 3]
+                if self.loop < 9:
+                    self.goal['z'] = self.loc[1]
+                else:
+                    self.goal['z'] = self.loc[2]
             
-        #     self.arm_joint_positions = [0, 0, 0, 0, 0, 0, 0]
-        # else:
-        self.goal['x'] = 0
-        self.goal['y'] = 0
-        self.goal['z'] = np.random.rand() * 2.50
-        self.arm_joint_positions = (np.random.rand(7) - 0.5) * 2 * np.pi/2
-        self.model_state_robot.pose.position.x = (np.random.rand() - 0.5) * X_DOMAIN 
-        self.model_state_robot.pose.position.y = (np.random.rand() - 0.5) * Y_DOMAIN 
-        self.model_state_robot.pose.position.z = 0
-        quaternion = quaternion_from_euler(0, 0, (np.random.rand() - 0.5) * 2 * np.pi)
-        self.model_state_robot.pose.orientation.x = quaternion[0]
-        self.model_state_robot.pose.orientation.y = quaternion[1]
-        self.model_state_robot.pose.orientation.z = quaternion[2]
-        self.model_state_robot.pose.orientation.w = quaternion[3]
+            self.arm_joint_positions = [0, 0, 0, 0, 0, 0, 0]
+        else:
+            self.goal['x'] = 0
+            self.goal['y'] = 0
+            self.goal['z'] = np.random.rand() * 2.50
+            self.arm_joint_positions = (np.random.rand(7) - 0.5) * 2 * np.pi/2
+            self.model_state_robot.pose.position.x = (np.random.rand() - 0.5) * X_DOMAIN 
+            self.model_state_robot.pose.position.y = (np.random.rand() - 0.5) * Y_DOMAIN 
+            self.model_state_robot.pose.position.z = 0
+            quaternion = quaternion_from_euler(0, 0, (np.random.rand() - 0.5) * 2 * np.pi)
+            self.model_state_robot.pose.orientation.x = quaternion[0]
+            self.model_state_robot.pose.orientation.y = quaternion[1]
+            self.model_state_robot.pose.orientation.z = quaternion[2]
+            self.model_state_robot.pose.orientation.w = quaternion[3]
         
         self.loop += 1
         # goal_size = [0.1, 0.05, 0.05]

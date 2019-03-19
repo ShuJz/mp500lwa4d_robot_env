@@ -9,7 +9,7 @@ from multiprocessing import Process
 import threading
 
 
-ON_TRAIN = False
+ON_TRAIN = True
 
 
 
@@ -56,7 +56,7 @@ def RLmemory_store(data):
     r = float(data.r)
     s_ = list(data.s_)
     rl.store_transition(s, a, r, s_)
-    # rospy.loginfo( "store memory %i" %store_steps)
+    rospy.loginfo( "store memory %i" %store_steps)
     if store_steps >= MAX_STEP:
         rospy.signal_shutdown(reason)
 

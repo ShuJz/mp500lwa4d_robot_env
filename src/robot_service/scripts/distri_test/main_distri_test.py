@@ -13,10 +13,10 @@ from robot_service.srv import RLChooseAction
 import os, time
 
 # 设置全局变量
-MAX_EPISODES = 4500
+MAX_EPISODES = 4010
 MAX_EP_STEPS = 50
 MAX_STEP = MAX_EPISODES * MAX_EP_STEPS
-ON_TRAIN = False  # True or False
+ON_TRAIN = True  # True or False
 LEARN_START = 25000
 ALPHA = LEARN_START / MAX_EP_STEPS
 BELTA = MAX_EPISODES - LEARN_START / MAX_EP_STEPS
@@ -26,8 +26,22 @@ ACTION_NOISE = True
 # 设置环境
 name1 = 'worker1'
 name2 = 'worker2'
+name3 = 'worker3'
+name4 = 'worker4'
+name5 = 'worker5'
+name6 = 'worker6'
+name7 = 'worker7'
+name8 = 'worker8'
+
 seed1 = 5
 seed2 = 10
+seed3 = 15
+seed4 = 20
+seed5 = 25
+seed6 = 30
+seed7 = 35
+seed8 = 40
+
 s_dim = 23
 a_dim = 9
 a_bound = 1.
@@ -40,13 +54,31 @@ t1 = time.time()
 def train():
     
     worker1 = Process(target=train_loop, args=(seed1, name1))
-    worker2 = Process(target=train_loop, args=(seed2, name2))
+    # worker2 = Process(target=train_loop, args=(seed2, name2))
+    # worker3 = Process(target=train_loop, args=(seed3, name3))
+    # worker4 = Process(target=train_loop, args=(seed4, name4))
+    # worker5 = Process(target=train_loop, args=(seed5, name5))
+    # worker6 = Process(target=train_loop, args=(seed6, name6))
+    # worker7 = Process(target=train_loop, args=(seed7, name7))
+    # worker8 = Process(target=train_loop, args=(seed8, name8))
 
     worker1.start()
-    worker2.start()
+    # worker2.start()
+    # worker3.start()
+    # worker4.start()
+    # worker5.start()
+    # worker6.start()
+    # worker7.start()
+    # worker8.start()
 
     worker1.join()
-    worker2.join()
+    # worker2.join()
+    # worker3.join()
+    # worker4.join()
+    # worker5.join()
+    # worker6.join()
+    # worker7.join()
+    # worker8.join()
 
 def train_loop(seed_set, name):
     
@@ -54,7 +86,6 @@ def train_loop(seed_set, name):
     from env_distri import mp500lwa4dEnv
     env = mp500lwa4dEnv(seed_set, name)
 
-    fo = open(name+".txt", "w")
 
     memory_store_pub = rospy.Publisher('/worker1/RLMemoryStore', RLMemoryStore, queue_size=10)
     RL_memory_data = RLMemoryStore()
@@ -65,7 +96,7 @@ def train_loop(seed_set, name):
     except rospy.ServiceException.e:
         print( "Service call failed: %s" %e)
     print('%s initialization done' % name)
-    # time_test1=time.clock()
+    time_test1=time.clock()
     for i in range(MAX_EPISODES):
 
         s = env.reset()                # 初始化回合设置
@@ -103,14 +134,14 @@ def train_loop(seed_set, name):
             
             ep_r += r
             s = s_                      # 变为下一回合
+            if j == 49:
+                time_test2 = time.clock()
+                print('used time: %.4f' %(time_test2 - time_test1))
+
             if done or j == MAX_EP_STEPS - 1:
                 print('Ep: %i | %s | ep_r1: %.1f | steps: %i' % (i, '---' if not done else 'done', ep_r, j))
-                fo.write(str(i)+','+str(done)+','+str(ep_r)+','+str(j)+'\n')
                 break
-            # if j == 10:
-            #     time_test2 = time.clock()
-            #     print('used time: %.4f' %(time_test2 - time_test1))
-    fo.close()
+
 def get_action(s, var, RL_choose_action):
 
     choose_action_resp = RL_choose_action(list(s))

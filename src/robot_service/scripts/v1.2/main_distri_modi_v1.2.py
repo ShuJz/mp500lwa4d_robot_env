@@ -13,10 +13,10 @@ from robot_service.srv import RLChooseAction
 import os, time
 
 # 设置全局变量
-MAX_EPISODES = 4500
+MAX_EPISODES = 4010
 MAX_EP_STEPS = 50
 MAX_STEP = MAX_EPISODES * MAX_EP_STEPS
-ON_TRAIN = False  # True or False
+ON_TRAIN = True  # True or False
 LEARN_START = 25000
 ALPHA = LEARN_START / MAX_EP_STEPS
 BELTA = MAX_EPISODES - LEARN_START / MAX_EP_STEPS
@@ -26,8 +26,10 @@ ACTION_NOISE = True
 # 设置环境
 name1 = 'worker1'
 name2 = 'worker2'
+name3 = 'worker3'
 seed1 = 5
 seed2 = 10
+seed3 = 15
 s_dim = 23
 a_dim = 9
 a_bound = 1.
@@ -41,12 +43,15 @@ def train():
     
     worker1 = Process(target=train_loop, args=(seed1, name1))
     worker2 = Process(target=train_loop, args=(seed2, name2))
+    worker3 = Process(target=train_loop, args=(seed3, name3))
 
     worker1.start()
     worker2.start()
+    worker3.start()
 
     worker1.join()
     worker2.join()
+    worker3.join()
 
 def train_loop(seed_set, name):
     

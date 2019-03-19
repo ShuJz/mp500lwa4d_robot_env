@@ -9,7 +9,7 @@ from multiprocessing import Process
 import threading
 
 
-ON_TRAIN = False
+ON_TRAIN = True
 
 
 
@@ -17,13 +17,15 @@ s_dim = 23
 a_dim = 9
 a_bound = 1.
 ACTION_NOISE = True
-MAX_EPISODES = 4000
+MAX_EPISODES = 3000
 MAX_EP_STEPS = 50
-MAX_STEP = MAX_EPISODES * MAX_EP_STEPS * 2
+WORKERS = 3
+MAX_STEP = MAX_EPISODES * MAX_EP_STEPS * WORKERS
 LEARN_START = 25000
 store_steps = 0
 learn_steps = 0
 reason = 'Learning completed'
+
 
 
 
@@ -86,7 +88,6 @@ if __name__ == "__main__":
 
     RL_choose_action.join()
     RL_memory_store.join()
-    
     if ON_TRAIN:
         rl.save()
     print( "Agent Save successfully, Learned %i times." %(learn_steps*10))
