@@ -6,6 +6,7 @@
   <arg name="use_sim_time" default="true"/>
   <arg name="use_clock_frequency" default="false"/>
   <arg name="pub_clock_frequency" default="100"/>
+  <!-- in Gazebo 9, gui=true will make a mistake-->
   <arg name="gui" default="false"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
@@ -42,7 +43,7 @@
     <env name="GAZEBO_MASTER_URI" value="http://localhost:11345"/>
     
     <!--<node name="gazebo" pkg="gazebo_ros" type="$(arg script_type)" respawn="$(arg respawn_gazebo)" args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) -e $(arg physics) $(arg extra_gazebo_args) $(arg world_name)" />-->
-    
+    <!-- in Gazebo 9, use following sentence will cause a worning-->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
       <arg name="world_name" value="$(arg world_name)" />
       <arg name="debug" value="$(arg debug)" />
@@ -59,13 +60,13 @@
     <param name="goal_description" command="$(find xacro)/xacro --inorder $(arg model_goal)"/>
     <!-- push robot_description to factory and spawn robot in gazebo -->
     <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -gazebo_namespace /worker1/gazebo -robot_namespace /worker1/mp500lwa4d -model mp500lwa4d -z 0." respawn="false" output="screen" />
-    <node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -gazebo_namespace /worker1/gazebo -robot_namespace /worker1/mp500lwa4d -model goal -z 1." respawn="false" output="screen" />
+    <!--<node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -gazebo_namespace /worker1/gazebo -robot_namespace /worker1/mp500lwa4d -model goal -z 1." respawn="false" output="screen" />-->
 
     <!-- joint_state_controller -->
     <rosparam ns="/worker1" file="$(find mp500lwa4d_description)/controller/joint_state_controller.yaml" command="load"/>
     <rosparam ns="/worker1" file="$(find mp500lwa4d_description)/controller/arm_controller.yaml" command="load"/>
     <rosparam ns="/worker1" file="$(find mp500lwa4d_description)/controller/mobile_base_controller.yaml" command="load"/>
-    <rosparam ns="/worker1" file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/>
+    <rosparam ns="/worker1/mp500lwa4d" file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/>
     <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="/worker1/mp500lwa4d" args="joint_state_controller 
                                                                                                            arm_1_joint_position_controller
                                                                                                            arm_2_joint_position_controller
@@ -116,13 +117,13 @@
     <param name="goal_description" command="$(find xacro)/xacro --inorder $(arg model_goal)"/>
     <!-- push robot_description to factory and spawn robot in gazebo -->
     <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -gazebo_namespace /worker2/gazebo -robot_namespace /worker2/mp500lwa4d -model mp500lwa4d -z 0." respawn="false" output="screen" />
-    <node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -gazebo_namespace /worker2/gazebo -robot_namespace /worker2/mp500lwa4d -model goal -z 1." respawn="false" output="screen" />
+    <!--<node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -gazebo_namespace /worker2/gazebo -robot_namespace /worker2/mp500lwa4d -model goal -z 1." respawn="false" output="screen" />-->
 
     <!-- joint_state_controller -->
     <rosparam ns="/worker2" file="$(find mp500lwa4d_description)/controller/joint_state_controller.yaml" command="load"/>
     <rosparam ns="/worker2" file="$(find mp500lwa4d_description)/controller/arm_controller.yaml" command="load"/>
     <rosparam ns="/worker2" file="$(find mp500lwa4d_description)/controller/mobile_base_controller.yaml" command="load"/>
-    <rosparam ns="/worker2" file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/>
+    <rosparam ns="/worker2/mp500lwa4d" file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/>
     <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="/worker2/mp500lwa4d" args="joint_state_controller 
                                                                                                            arm_1_joint_position_controller
                                                                                                            arm_2_joint_position_controller
@@ -173,13 +174,13 @@
     <param name="goal_description" command="$(find xacro)/xacro --inorder $(arg model_goal)"/>
     <!-- push robot_description to factory and spawn robot in gazebo -->
     <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -gazebo_namespace /worker3/gazebo -robot_namespace /worker3/mp500lwa4d -model mp500lwa4d -z 0." respawn="false" output="screen" />
-    <node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -gazebo_namespace /worker3/gazebo -robot_namespace /worker3/mp500lwa4d -model goal -z 1." respawn="false" output="screen" />
+    <!--<node name="spawn_gazebo_model_goal" pkg="gazebo_ros" type="spawn_model" args="-urdf -param goal_description -gazebo_namespace /worker3/gazebo -robot_namespace /worker3/mp500lwa4d -model goal -z 1." respawn="false" output="screen" />-->
 
     <!-- joint_state_controller -->
     <rosparam ns="/worker3" file="$(find mp500lwa4d_description)/controller/joint_state_controller.yaml" command="load"/>
     <rosparam ns="/worker3" file="$(find mp500lwa4d_description)/controller/arm_controller.yaml" command="load"/>
     <rosparam ns="/worker3" file="$(find mp500lwa4d_description)/controller/mobile_base_controller.yaml" command="load"/>
-    <rosparam ns="/worker3" file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/>
+    <rosparam ns="/worker3/mp500lwa4d" file="$(find mp500lwa4d_description)/controller/gazebo_control.yaml" command="load"/>
     <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="/worker3/mp500lwa4d" args="joint_state_controller 
                                                                                                            arm_1_joint_position_controller
                                                                                                            arm_2_joint_position_controller

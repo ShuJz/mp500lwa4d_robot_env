@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <launch>
     <!-- start Agent -->
-    <node pkg="robot_service" type="RLAgent.py" name="" ns="/worker1" />
+    <!--<node pkg="robot_service" type="RLAgent.py" name="" ns="/worker1" />-->
     <!-- start training -->
-    <node pkg="robot_service" type="main_distri_modi.py" name="" ns="/worker1" />
+    <group ns="worker1">
+        <remap from="/clock" to="/worker1/clock"/>
+        <node pkg="robot_service" type="main_distri.py" name="" />
+    </group>
 </launch>
