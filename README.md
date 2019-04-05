@@ -1,9 +1,9 @@
 # mp500lwa4d_robot_env
 There are ROS packages of a mobile robot, compose of mobile base([neo_mp_500](https://github.com/neobotix/neo_mp_500)), arm([lwa4d](https://github.com/ipa320/schunk_modular_robotics/tree/indigo_dev/schunk_description)) and gripper([PG-plus70](https://github.com/ShuJz/schunk_modular_robotics)), and a OpenAI.gym-based enviroment interface.
 
-![3dRobot](/home/jingzhe/Dropbox/IPR_Praktikum/3dRobot.png)
+![3dRobot](https://github.com/ShuJz/mp500lwa4d_robot_env/blob/master/3dRobot.png)
 
-![system](/home/jingzhe/Pictures/system.png)
+![system](https://github.com/ShuJz/mp500lwa4d_robot_env/blob/master/system.png)
 
 Before train the model, pleace determine the default version of Python you are using,
 
