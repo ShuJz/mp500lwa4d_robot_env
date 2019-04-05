@@ -1,4 +1,4 @@
-This is a description package for robot mp500lwa4d.
+This is a DRL package for robot mp500lwa4d.
 
 Before train the model, pleace determine the default version of Python you are using,
 
