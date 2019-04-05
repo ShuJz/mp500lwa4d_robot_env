@@ -1,5 +1,5 @@
 # mp500lwa4d_robot_env
-There are ROS packages of a mobile robot, compose of mobile base([neo_mp_500](https://github.com/neobotix/neo_mp_500)), arm([lwa4d](https://github.com/ipa320/schunk_modular_robotics/tree/indigo_dev/schunk_description)) and gripper([PG-plus70](https://github.com/ShuJz/schunk_modular_robotics)), and a OpenAI.gym-based enviroment interface.
+There are ROS packages of a mobile robot, consists of mobile base([neo_mp_500](https://github.com/neobotix/neo_mp_500)), arm([lwa4d](https://github.com/ipa320/schunk_modular_robotics/tree/indigo_dev/schunk_description)) and gripper([PG-plus70](https://github.com/ShuJz/schunk_modular_robotics)), and a OpenAI.gym-based enviroment interface.
 
 ![3dRobot](https://github.com/ShuJz/mp500lwa4d_robot_env/blob/master/3dRobot.png)
 
